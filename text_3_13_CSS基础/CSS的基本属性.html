@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS的基本属性</title>
+    <style>、
+    /*CSS的优先级：行内 > id > class > 标签*/
+    
+        .font {
+            font-size: 20px;/*文字大小*/
+            font-style: normal;/*字体是否倾斜*/
+            font-family: Verdana, Geneva, Tahoma, sans-serif;/*文字类型*/
+            font-weight: 400;/*文字粗细*/
+            /*400为normal，700为加粗*/
+        }
+
+        #font {
+            font: italic bolder 24px/1.5em Tahoma;
+        }
+
+        .TextStyle {
+            letter-spacing: 2px;/*字符间距*/
+            line-height: 1.5;/*行间距*/
+            text-indent: 2em;/*缩进量*/
+        }
+
+        .CharDecoration {
+            text-decoration: none;
+            text-decoration: underline;/*下划线*/
+            text-decoration: line-through;/*删除线/<del>*/
+            text-decoration: overline;/*顶划线*/
+
+            text-transform: capitalize;/*首字母大写*/
+            text-transform: uppercase;/*大写*/
+            text-transform: lowercase;/*小写*/
+        }
+
+        .alihnment {
+            text-align: center;/*居中*/
+            text-align: right;/*右对齐*/
+            text-align: left;/*左对齐*/
+        }
+
+        .color {
+            color: rgba(23, 50, 0, .5);
+            /* color: aliceblue; */
+            color: rgb(red 10%, green 40%, blue 50%) color #fff
+        }
+
+        .bcakgroud {
+            background-color: aqua;
+            background-image: none;
+            background-repeat: inherit;
+            background-attachment: auto;
+            background-position: 0%;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="font">这是font属性</p>
+    <p id="font">这是font属性的另一种表示</p>
+    <p class="TextStyle">
+        文本（text），从词源上来说，它表示编织的东西。这与中国“文”的概念颇有类似之处。“文”取象人形，指纹身，指花纹。《说文解字叙》称：“仓颉初作书，盖依类象形，故曰文。”“文者，物象之本。”物象均具纹路色彩，因以“文”来指称。《周易·系辞下》记伏羲氏“观鸟兽之文”，鸟兽身上的花纹彩羽。该书又载“物相杂故曰文”，物体的形状、线条色彩相互交错，这也是文。“观乎天文，以察时变，观乎人文，以化成天下。”《说文解字》解释“文”为“错画也。”
+        但是文本的概念后来主要变成了：“任何由书写所固定下来的任何话语。”对语言学家来说，文本指的是作品的可见可感的表层结构，是一系列语句串联而成的连贯序列。文本可能只是一个单句，例如谚语、格言、招牌等，但比较普遍的是由一系列句子组成。文本和段落的区别在于，文本构成了一个相对封闭、自足的系统。前苏联符号学家洛特曼指出，文本是外观的，即用一定的符号来表示；它是有限的，既有头有尾；它有内部结构。罗兰·巴特文本一方面是能指，即实际的语言符号以及由它们所组成的词、句子和段落章节，另一方面是所指，即固定的确定的和单一的意思，为表达这种意思的正确性所限定。以上从技术上中性地对文本做出基本界定。
+        “文本”一词来自英文text，另有本文、正文、语篇和课文等多种译法。这个词广泛应用于语言学和文体学中，而且也在文学理论与批评中扮演活跃的角色。但它含义丰富而不易界定，给实际运用和理解带来一定困难。可以一般地说，文本是语言的实际运用形态。而在具体场合中，文本是根据一定的语言衔接和语义连贯规则而组成的整体语句或语句系统，有待于读者阅读。
+    </p>
+    <p class="CharDecoration">这是字符装饰</p>
+    <div class="alihnment">这是对齐方式</div>
+    <p class="color">这是颜色属性</p>
+    <p class="bcakgroud">这是背景</p>
+</body>
+
+</html>

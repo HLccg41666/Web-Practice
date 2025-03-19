@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="lang">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS的三大特性</title>
+    <style>
+        body {
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        div {
+            font-size: 16px;
+            font-style: italic;
+        }
+
+        span {
+            font-size: 50px;
+            color: red;
+        }
+
+        span {
+            font-style: italic;
+            color: green;
+        }
+
+        p {
+            font-size: 16px;
+            color: #999;
+        }
+
+        .class {
+            font-size: 32px;
+            color: #8d6f6f;
+        }
+
+        #id {
+            font-size: 48px;
+            color: #8f4949;
+        }
+
+        .p1 {
+            font-size: 50px !important;
+            color: #ff0000 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 继承性 -->
+    <!-- 子类继承父类所有属性，也可以添加父类没有的属性 -->
+    <p>这是继承性</p>
+
+    <div>
+        <p>这也是继承性</p>
+    </div>
+
+    <!-- 层叠性 -->
+    <!-- 相同属性覆盖（后者覆盖前者），不同属性叠加 -->
+    <span>这是层叠性</span>
+
+    <!-- 优先级 -->
+    <!-- ！important>行内样式>id样式>类样式>标签样式>通配符样式>继承(在符合选择器中) -->
+    <p>这是p标签的文字</p>
+    <p class="class">这是p标签和class样式的文字</p>
+    <p class="class" id="id">这是p标签和class和id的样式样式的文字</p>
+    <p class="class" id="id" style="font-size: 64px;color: #9a3333;">这是p标签和class和id的样式和行内样式的文字</p>
+    <p class="class p1" id="id" style="font-size: 64px;color: #9a3333;">这是p标签和class和id的样式和行内样式和!inportant的文字</p>
+</body>
+
+</html>

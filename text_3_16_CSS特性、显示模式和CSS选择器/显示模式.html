@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>显示模式</title>
+<style>
+    div {
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        color: orange;
+        /* 显示模式转换 */
+        /* display:block(块元素)/inline（行内元素）/inline-block（行内块元素）; */
+    }
+    span {
+       width: 100px;/*不生效*/
+       height: 100px;/*不生效*/
+       background-color:red;
+    }
+    img {
+        width: 100px;
+        height: 100px;
+    }
+</style>
+</head>
+
+<body>
+    <!-- 块元素 -->
+     <!-- 独占一行，宽高属性可以生效，默认属性为父级的100% -->
+    <div>这是div块</div>
+    <br>
+    <div>这是div块</div>
+    <!-- 行内元素 -->
+     <!-- （一行共存）不换行，宽高属性不能生效，宽高由内容撑开 -->
+     <span>这是span块</span>
+     <span>这是span块</span>
+    <!-- 行内块元素 -->
+     <!-- 一行共存，宽高属性生效，默认由内容撑开 -->
+     <img src="./1.jpg">
+     <img src="./1.jpg">
+</body>
+
+</html>

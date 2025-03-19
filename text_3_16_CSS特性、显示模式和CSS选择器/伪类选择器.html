@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类选择器</title>
+
+    <style>
+        /* 未访问之前的样式 */
+        a:link {
+            color: #333;
+        }
+
+        /* 访问之后的样式 */
+        a:visited {
+            color: #7e7979;
+        }
+
+        /* 鼠标悬停的样式 */
+        a:hover {
+            color: red;
+        }
+
+        /* 用户点击（激活）时的样式 */
+        a:active {
+            color: green;
+        }
+
+
+        .b:link {
+            color: aquamarine;
+        }
+
+        .b:visited {
+            color: saddlebrown;
+        }
+
+        .b:hover {
+            color: orange;
+        }
+
+        .b:active {
+            color: purple;
+        }
+
+        /* 队医超链接状态一般用放 */
+        /*a {
+            color:#999;              
+        }
+        a:hover{
+            color: red;
+        }
+        */
+
+    </style>
+</head>
+
+<body>
+    <a href="#">这是一个超链接</a>
+    <br>
+    <a href="#" class="b">这也是一个超链接</a>
+</body>
+
+</html>

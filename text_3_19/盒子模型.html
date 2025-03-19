@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型</title>
+    <style>
+        div {
+            width: 400px;
+            height: 400px;
+            background-color: #c47c7c;
+            /* 内边距，输入四个数字时默认顺序为上右下左（填写少于4个数值时，少的数值与对面的数值相等） */
+            padding: 50px;
+
+            /* 边框，可单独设置每一边的边框，属性：width，style，color空格隔开 */
+            /* border: 10px solid green; */
+            border-top: 10px solid green;
+            border-right: 20px dashed red;
+            border-bottom: 30px double orange;
+            border-left: 40px dotted pink;
+
+            /* 外边界，与padding一样的默认顺序和设置模式， */
+            /* 版心居中 */
+            margin: 10px auto;
+
+            /* 需要关注的是，当使用padding和border属性时，盒子的尺寸会被撑大 尺寸为：原本大小+padding+border*/
+            /* 可通过之际计算减去撑大部分或使用box-sizing:border-box 属性浏览器会自动减去 */
+            box-sizing: border-box;
+        }
+
+        /* 因为所有标签都有其默认样式，对于一般的项目开始需要清楚默认样式 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+<div></div>
+</body>
+
+</html>

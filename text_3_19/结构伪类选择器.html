@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>结构伪类选择器</title>
+    <style>
+        li:first-child {
+            background-color: aqua;
+        }
+        li:last-child {
+            background-color:bisque;
+        }
+        /* 可以设置任意数字，例如2你，2n+1，5+n，-5+n等等 */
+        li:nth-child(6) {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+</ul>
+</body>
+
+</html>

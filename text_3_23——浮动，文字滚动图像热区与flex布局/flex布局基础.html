@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="lang">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex布局基础</title>
+    <style>
+        .box {
+            /*1. flex布局：.box称为弹性容器，里面的内容div被称为弹性盒子 */
+            /*2. 默认水平排列（主轴），侧轴（垂直）*/
+            /*3. 自动挤压和自动拉伸(如果盒子不设宽高，默认主轴内容撑开，侧轴拉伸) */
+            display: flex;
+
+            /* 主轴排列样式 （与align-content行对齐样式一致）*/
+            /* justify-content:flex-start; ————从盒子左边开始排列(默认)*/
+            /* justify-content: flex-end; ————从盒子右边开始排列*/
+            /* justify-content: center; */
+            justify-content: space-between;/*空白在盒子之间*/
+            /* justify-content: space-around; ————空白的盒子两侧*/
+            /* justify-content: space-evenly; ————空白部分均等分配*/
+
+            /* 侧轴排列样式 */
+            align-items: center;
+            /* 对容器 */
+            /* align-items: stretch; */
+            /* align-items: start; */
+            /* align-items: end; */
+            /* 对盒子 */
+            /* 同理，写在想改变的盒子中即可 */
+
+            /* 修改默认轴排列方式 */
+            /* 注意：修改后原先的侧轴（垂直）变为主轴，对应的代码例（justify-content）任作用于侧轴(即现在的主轴) */
+            /* flex-direction: column; */
+
+            /* 盒子换行 */
+            flex-wrap: wrap;
+
+
+            height: 300px;
+            border: 1px solid black;
+        }
+        .box div {
+            
+            width: 200px;
+            height: 100px;
+            background-color: #3d7d7c5d;
+        }
+        .box div:nth-child(1) {
+            /* 弹性伸缩比：flex */
+
+            /* flex:1 */
+        }
+        .box div:nth-child(2){
+            /* 弹性伸缩比：flex */
+            /* flex: 2; */
+        }
+        
+    </style>
+</head>
+
+<body>
+<div class="box">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>1</div>
+    <div>2</div>
+</div>
+</body>
+
+</html>

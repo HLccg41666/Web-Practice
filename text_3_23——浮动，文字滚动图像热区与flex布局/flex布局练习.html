@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="lang">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex布局练习</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: 2400px;
+            height: 1200px;
+            border: 1px solid #8a8a8a;
+            margin: 100px auto;
+            border-radius: 30px;
+        }
+
+        .box ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            list-style-type: none;
+            height: 1000px;
+            width: 80%;
+            margin: 100px auto;
+
+        }
+
+        .box ul li {
+            width: 900px;
+            height: 400px;
+            background-color: rgb(241, 235, 235);
+            display: flex;
+        }
+
+        .box .pic {
+            margin: 110px auto;
+            margin-left: 50px;
+        }        
+
+        .box .text {
+            margin: 100px 0;
+            margin-left: 40px;
+        }
+     
+        .box .text h4 {
+            font-size: 50px;
+            color: #000;
+            margin-bottom: 20px;
+        }
+        .box .text p{
+            font-size: 30px;
+            color: #000;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <ul>
+            <li>
+                <div class="pic">
+                    <img src="./图片/Ae.png" style="height: 200px;">
+                </div>
+                <div class="text">
+                    <h4>Adobe After Effects</h4>
+                    <p>Adobe After Effects是Adobe公司开发的一款视频后期制作软件，广泛应用于影视、广告、动画等领域。</p>
+                </div>
+
+
+            </li>
+            <li>
+                <div class="pic">
+                    <img src="./图片/Pr.png" style="height: 200px;">
+                </div>
+                <div class="text">
+                    <h4>Adobe Premiere Pro</h4>
+                    <p>Adobe Premiere Pro是Adobe公司开发的一款专业视频编辑软件，广泛应用于影视、广告、动画等领域。</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic">
+                    <img src="./图片/PS.png" style="height: 200px;">
+                </div>
+                <div class="text">
+                    <h4>Adobe Photoshop</h4>
+                    <p>Adobe Photoshop是Adobe公司开发的一款图像处理软件，广泛应用于平面设计、摄影、网页设计等领域。</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic">
+                    <img src="./图片/AI.png" style="height: 200px;">
+                </div>
+                <div class="text">
+                    <h4>Adobe Illustrator</h4>
+                    <p>Adobe Illustrator是Adobe公司开发的一款矢量图形设计软件，广泛应用于平面设计、插画、网页设计等领域。</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

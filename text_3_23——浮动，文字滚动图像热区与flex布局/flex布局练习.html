@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>flex布局练习</title>
     <style>
+        /* 通配符选择器取消标签默认样式 */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
+        /* 大盒子 */
         .box {
             width: 2400px;
             height: 1200px;
@@ -19,46 +20,46 @@
             margin: 100px auto;
             border-radius: 30px;
         }
-
+        /* 大盒子内的无序列 */
         .box ul {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            list-style-type: none;
+            display: flex; /* 为li标签设置flex布置 */
+            flex-wrap: wrap;/* 设置为换行排列 */
+            justify-content: space-between;/* 设置主轴对齐方式为两端对齐 */
+            align-items: center;/* 设置侧轴轴对齐方式为居中对齐 */
+            list-style-type: none;/* 取消列表符号 */
             height: 1000px;
             width: 80%;
             margin: 100px auto;
 
         }
-
+        /* 大盒子内的无序列中的列表项 */
         .box ul li {
             width: 900px;
             height: 400px;
             background-color: rgb(241, 235, 235);
-            display: flex;
+            display: flex;/* 为图片盒子和文本盒子设置flex布置 */
         }
-
+        /* 大盒子内的无序列中的列表项中的图片盒子标签 */
         .box .pic {
             margin: 110px auto;
-            margin-left: 50px;
-        }        
-
+            margin-left: 50px;/* 设置图片盒子与文本盒子之间的间距 */
+        }
+        /* 大盒子内的无序列中的列表项中文本标签（h4，p） */
         .box .text {
             margin: 100px 0;
-            margin-left: 40px;
+            margin-left: 40px;/* 设置文本盒子与图片盒子之间的间距 */
         }
-     
+        /* 大盒子内的无序列中的列表项中h4的标签样式 */
         .box .text h4 {
             font-size: 50px;
             color: #000;
-            margin-bottom: 20px;
+            margin-bottom: 20px;/* 设置h4与p之间的间距 */
         }
-        .box .text p{
+        /* 大盒子内的无序列中的列表项中p的标签样式 */
+        .box .text p {
             font-size: 30px;
             color: #000;
         }
-
     </style>
 </head>
 

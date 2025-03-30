@@ -1,0 +1,310 @@
+body {
+    background-color: #f3f5f7;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+/* 版心居中 */
+.wrapper {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.header {
+    height: 55.67px;
+}
+
+.header .wrapper {
+    margin: 30px auto;
+    display: flex;
+}
+
+.logo a {
+    display: block;
+    width: 200px;
+    height: 47px;
+    font-size: 0px;
+}
+
+/* 导航 */
+.nav {
+    margin-left: 102px;
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav ul li {
+    margin: auto 15px;
+
+}
+
+.nav a {
+    display: block;
+    font-size: 18px;
+    padding: 0 9px;
+    height: 47px;
+    line-height: 47px;
+    text-decoration: none;
+    color: #000;
+}
+
+.nav li .active,
+.nav a:hover {
+    border-bottom: 2px solid #00a4ff;
+}
+
+.seach {
+    width: 360px;
+    height: 38px;
+    margin-left: 60px;
+    border: 1px solid rgb(116, 179, 224);
+    border-radius: 20px;
+    height: 50px;
+    margin-top: 2px;
+    display: flex;
+}
+
+.seach input {
+    flex: 1;
+    padding-left: 20px;
+    border: none;
+    outline: none;
+    background-color: #ffffff00;
+    margin-top: 7px;
+}
+
+.seach input::placeholder {
+    font-size: 18px;
+}
+
+.seach a {
+    width: 96px;
+    height: 36px;
+    background-image: url(../image/搜索.png);
+    margin-top: 7px;
+    background-repeat: no-repeat;
+    display: block;
+    border-radius: 20px;
+}
+
+.user {
+    margin-left: 70px;
+}
+
+.user img {
+    margin-top: 8px;
+    width: 40px;
+    height: 40px;
+}
+
+.user a {
+    text-decoration: none;
+    vertical-align: middle;
+    color: black;
+}
+
+.user span {
+    margin-left: 6px;
+}
+
+.banner {
+    justify-content: space-between;
+    background-image: url(../upload/黑白灰的世界.png);
+    background-color: #232491;
+    height: 420px;
+    margin: 30px auto;
+}
+
+.banner .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner .left {
+    background-color: rgba(255, 255, 255, 0.753);
+    height: 420px;
+    width: 190px;
+    padding: 0 20px;
+    line-height: 46px;
+}
+
+.left ul {
+    list-style-type: none;
+}
+
+.left ul li a {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+
+}
+
+.left ul li a:hover {
+    color: #077ebe;
+}
+
+.right {
+    margin-top: 50px;
+    width: 228px;
+    height: 300px;
+}
+
+.right h3 {
+    border-radius: 20px;
+    display: block;
+    color: #ffffff;
+    font-weight: 400;
+    text-align: center;
+    height: 48px;
+    line-height: 48px;
+    font-size: 18px;
+    background-color: #5082b5;
+}
+
+.right .content {
+    border-radius: 20px;
+    background-color: #ffffff;
+    padding: 0 18px;
+    height: 252px;
+}
+
+.content dl {
+    color: #4e4e4e;
+    border-bottom: 2px solid #dbdbdb;
+    padding: 12px 0;
+}
+
+.content dl dd {
+    font-size: 14px;
+}
+
+.content .more {
+    font-weight: 700;
+    border: 1px solid #7fbae8;
+    margin: 4px 4px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.recommend {
+    display: flex;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 30px;
+    margin-top: 8px;
+    box-shadow: 0px 2px 3px 0px rgba(118, 118, 118, 0.2);
+}
+
+.recommend h3 {
+    color: #4193d1;
+    margin-right: 30px;
+}
+
+.recommend ul {
+    flex: 1;
+    display: flex;
+
+}
+
+.recommend ul li {
+    color: #4e4e4e;
+    text-align: center;
+    line-height: 60px;
+}
+
+.recommend ul li a {
+    padding: 0 35px;
+    color: #000000;
+    font-size: 16px;
+    border-right: 1px solid #616161;
+}
+
+.recommend .a1 {
+    font-size: 14px;
+    color: #2f86c9;
+
+}
+.course {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.course h3 {
+    font-size: 20px;
+    color: #494949;
+}
+.course a {
+    padding-right: 30px;
+    font-size: 12px;
+    color: #a5a5a5;
+}
+.courselist {
+    margin-top: 14px;
+}
+.courselist ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.courselist ul li {
+   width: 228px;
+   height: 270px;
+   background-color: rgb(255, 255, 255);
+   margin-bottom: 15px;
+}
+.courselist ul li pic {
+    width: 228px;
+    height: 155px;
+}
+.courselist ul li h4 {
+    color: #050505;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 20px;
+}
+.courselist ul li p {
+    font-size: 12px;
+    color: #999999;
+    padding: 0 20px;
+}
+.courselist ul li .text {
+   color: #ff7c2d;
+}
+.footer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+}
+.footer .left {
+    width: 450px;
+    height: 150px;
+    margin-top: 30px;
+}
+.footer .left p {
+    padding: 20px 0;
+    font-size: 12px;
+    color: #666666;
+}
+.footer .left a {
+    line-height: 36px;
+    text-align: center;
+    display: block;
+    width: 120px;
+    height: 36px;
+    border: 1px solid #4ea3df;
+    color: #4ea5da;
+    font-size: 16px;
+}

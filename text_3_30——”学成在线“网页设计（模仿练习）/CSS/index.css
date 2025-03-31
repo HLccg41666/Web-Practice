@@ -1,12 +1,15 @@
+/* 设置body背景颜色 */
 body {
     background-color: #f3f5f7;
 }
 
+/* 设置总体的a标签样式 */
 a {
     text-decoration: none;
     color: black;
 }
 
+/* 取消所有的列表标签的符号 */
 ul,
 ol {
     list-style-type: none;
@@ -18,15 +21,18 @@ ol {
     width: 1200px;
 }
 
+/* 头部 */
 .header {
     height: 55.67px;
 }
 
+/* 头部版心居中 */
 .header .wrapper {
     margin: 30px auto;
     display: flex;
 }
 
+/* logo区域 */
 .logo a {
     display: block;
     width: 200px;
@@ -59,14 +65,15 @@ ol {
     color: #000;
 }
 
+/* 设置导航区域的鼠标悬停活动 */
 .nav li .active,
 .nav a:hover {
     border-bottom: 2px solid #00a4ff;
 }
 
+/* 搜索区域 */
 .seach {
     width: 360px;
-    height: 38px;
     margin-left: 60px;
     border: 1px solid rgb(116, 179, 224);
     border-radius: 20px;
@@ -75,6 +82,7 @@ ol {
     display: flex;
 }
 
+/* 输入框 */
 .seach input {
     flex: 1;
     padding-left: 20px;
@@ -84,10 +92,12 @@ ol {
     margin-top: 7px;
 }
 
+/* 输入框提示字 */
 .seach input::placeholder {
     font-size: 18px;
 }
 
+/* 搜索框的搜索按钮（使用超链接实现） */
 .seach a {
     width: 96px;
     height: 36px;
@@ -98,6 +108,7 @@ ol {
     border-radius: 20px;
 }
 
+/* 用户区域 */
 .user {
     margin-left: 70px;
 }
@@ -110,6 +121,7 @@ ol {
 
 .user a {
     text-decoration: none;
+    /* 行内块竖直方向上的居中 */
     vertical-align: middle;
     color: black;
 }
@@ -118,6 +130,7 @@ ol {
     margin-left: 6px;
 }
 
+/* 正文区域 */
 .banner {
     justify-content: space-between;
     background-image: url(../upload/黑白灰的世界.png);
@@ -131,6 +144,7 @@ ol {
     justify-content: space-between;
 }
 
+/* 左边块 */
 .banner .left {
     background-color: rgba(255, 255, 255, 0.753);
     height: 420px;
@@ -154,6 +168,7 @@ ol {
     color: #077ebe;
 }
 
+/* 右边块 */
 .right {
     margin-top: 50px;
     width: 228px;
@@ -197,6 +212,7 @@ ol {
     text-align: center;
 }
 
+/* 精品推荐区域 */
 .recommend {
     display: flex;
     height: 60px;
@@ -235,75 +251,88 @@ ol {
     color: #2f86c9;
 
 }
+
 .course {
     margin-top: 35px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+/* 课程区域 */
 .course h3 {
     font-size: 20px;
     color: #494949;
 }
+
 .course a {
     padding-right: 30px;
     font-size: 12px;
     color: #a5a5a5;
 }
+
+/* 课程列表区域 */
 .courselist {
     margin-top: 14px;
 }
+
 .courselist ul {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 .courselist ul li {
-   width: 228px;
-   height: 270px;
-   background-color: rgb(255, 255, 255);
-   margin-bottom: 15px;
-}
-.courselist ul li pic {
     width: 228px;
-    height: 155px;
+    height: 270px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 15px;
 }
+
 .courselist ul li h4 {
     color: #050505;
     font-weight: 400;
     font-size: 14px;
     padding: 20px;
 }
+
 .courselist ul li p {
     font-size: 12px;
     color: #999999;
     padding: 0 20px;
 }
+
 .courselist ul li .text {
-   color: #ff7c2d;
+    color: #ff7c2d;
 }
+
+/* 底部 */
 .footer {
     margin-top: 40px;
     display: flex;
     justify-content: space-between;
     background-color: #ffffff;
 }
+
 .footer .wrapper {
     margin: 0 auto;
     width: 1200px;
     display: flex;
     justify-content: space-between;
 }
+
 .footer .left {
     width: 450px;
     height: 150px;
     margin-top: 30px;
 }
+
 .footer .left p {
     padding: 20px 0;
     font-size: 12px;
     color: #666666;
 }
+
 .footer .left a {
     line-height: 36px;
     text-align: center;
@@ -314,20 +343,24 @@ ol {
     color: #4ea5da;
     font-size: 16px;
 }
+
 .footer .wrapper .right {
     width: 600px;
     display: flex;
     justify-content: end;
 }
+
 .footer .right dl {
     margin-left: 120px;
     color: #333;
 }
+
 .footer .right dl dt {
-   font-size: 16px;
-   margin-bottom: 8px;
+    font-size: 16px;
+    margin-bottom: 8px;
 }
+
 .footer .right dl dd {
     font-size: 12px;
     margin-bottom: 3px;
-}d
+}

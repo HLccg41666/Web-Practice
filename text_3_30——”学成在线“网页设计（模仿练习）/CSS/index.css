@@ -364,3 +364,46 @@ ol {
     font-size: 12px;
     margin-bottom: 3px;
 }
+
+/* 前端区域 */
+.course .ul1 {
+    display: flex;
+    text-align: center;
+}
+.course .ul1 li a {
+    margin-left: 50px;
+    font-size: 18px;
+    color: #000000;
+}
+.course .ul1 li a:hover,
+.course .ul1 li .a2 {
+    color: #108bf6;
+}
+
+/* 前端资料区 */
+.course1 {
+    margin-top: 14px;
+}
+
+.course1 .wrapper {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course1 .left1 {
+    margin-right: 14px;
+}
+.course .right1 {
+    display: flex;
+}
+.course1 .wrapper .right1 ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+.course1 .wrapper .right1 ul li {
+    margin-bottom: 70px;
+   
+}

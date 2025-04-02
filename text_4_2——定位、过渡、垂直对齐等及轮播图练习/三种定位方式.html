@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三种定位方式</title>
+    <style>
+        img {
+            width: 400px;
+            height: 400px;
+        }
+
+        /* 相对定位 */
+        /* 1.不脱标，占位
+           2.相对定位的参照物是他原本的位置 
+           3.相对定位后保留原来的标签属性*/
+        .div1 img {
+            position: relative;
+            /* 相对定位*/
+            top: 40px;
+            /*顶部偏移*/
+            left: 200px;
+            /*左侧偏移*/
+        }
+
+        /* 绝对定位 */
+        /* 1.脱标，不占位
+           2.参照物是离他最近的祖先标签，没有则参照浏览器窗口
+           3.显示模式变为行内块模式
+           4.一般使用方法：子绝父相——即子级可以参照父级进行定位*/
+        .div2 {
+            padding: 10px;
+            border: 2px solid black;
+            width: 400px;
+            height: 600px;
+            position: relative;
+        }
+
+        .div2 span {
+            width: 100px;
+            /*宽可以生效*/
+            background-color: #898989;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        /* 固定定位 */
+        /* 1.脱标，不占位
+           2.参照物为浏览器窗口
+           3.行内块显示模式
+           4一般使用：块在浏览器水平垂直居中 */
+        /* 水平垂直居中
+            left:50%
+            top:50%——————块的左上角在窗口的中心
+            margin-left:-块width
+            margin-top:-块height
+            or
+            transform: translate(-50%,-50%)
+             */
+        .div3 {
+            position: fixed;
+            text-align: center;
+            width: 1200px;
+            background-color: pink;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* margin-left: -600px; */
+        }
+
+        /* Z-index */
+        /* 图层层叠问题
+            数字也大，图层越高，无属性默认后者居上 */
+        .div4 {
+            position: absolute;
+            top: 20px;
+            left: 50px;
+            width: 200px;
+            height: 200px;
+            background-color: #b5c065;
+            z-index: 2;
+        }
+
+        .div5 {
+            position: absolute;
+            top: 50px;
+            left: 75px;
+            width: 200px;
+            height: 200px;
+            background-color: #6754d2;
+            z-index: 1;
+        }
+
+        .div6 {
+            top: 75px;
+            left: 100px;
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: #a72b88;
+            z-index: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <p>余世存在他的《重建生活》一书的自序中说道：“我更记得鲁迅曾坚定地说，我在生活，我存在着。
+        然而，又有多少人关心生活和存在呢？一百多年了，我们一直在漂流，我们试图寻找到一个结果，
+        一个我们理想的家园；一百多年了，我们都是把个人的命运、价值跟普遍的宏大的名词和叙事捆绑在一起；
+        一百多年了，我们用苦难、不幸偿还我们对革命欠下的债务，共和、现代化、三民主义、共产主义、爱国主义、市场经济、消费主义、后现代话语……等一次又一次的时尚革命为我们发起。
+    </p>
+    <div class="div1"><img src="../text_3_30——”学成在线“网页设计（模仿练习）/upload/uesr.jpg"></div>
+    <p>余世存在他的《重建生活》一书的自序中说道：“我更记得鲁迅曾坚定地说，我在生活，我存在着。
+        然而，又有多少人关心生活和存在呢？一百多年了，我们一直在漂流，我们试图寻找到一个结果，
+        一个我们理想的家园；一百多年了，我们都是把个人的命运、价值跟普遍的宏大的名词和叙事捆绑在一起；
+        一百多年了，我们用苦难、不幸偿还我们对革命欠下的债务，共和、现代化、三民主义、共产主义、爱国主义、市场经济、消费主义、后现代话语……等一次又一次的时尚革命为我们发起
+    </p>
+
+    <div class="div2">
+        <img src="../text_3_30——”学成在线“网页设计（模仿练习）/upload/uesr.jpg">
+        <p>余世存在他的《重建生活》一书的自序中说道：“我更记得鲁迅曾坚定地说，我在生活，我存在着。</p>
+        <span>《重建生活》</span>
+    </div>
+
+    <div class="div3">《重建生活》——余世存</div>
+    <div class="div4">div4</div>
+    <div class="div5">div5</div>
+    <div class="div6">div6</div>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>轮播图</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+        /* banner区域 */
+        .banner {
+            /* 设置子绝父相 */
+            position: relative;
+            width: 512px;
+            border-radius: 20px;
+            margin: 50px auto;
+            /* 隐藏多余图片，利于后续补充轮转功能 */
+            overflow: hidden;
+        }
+
+        .banner img {
+            border-radius: 20px;
+        }
+
+        .banner ul {
+            display: flex;
+        }
+        /* 为左右两边的箭头设置相同的样式 */
+        .banner .prev,
+        .banner .next {
+            /* 先隐藏 */
+            display: none;
+            position: absolute;
+            width: 20px;
+            height: 30px;
+            background-color: rgba(0, 0, 0, 0.3);
+            text-align: center;
+            line-height: 30px;
+        }
+        /* 左箭头 */
+        .banner .prev {
+            /* 左边定位 */
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 0 10px 10px 0;
+        }
+        /* 右箭头 */
+        .banner .next {
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            border-radius: 10px 0 0 10px;
+        }
+        /* 设置箭头需鼠标进入banner后出现 */
+        .banner:hover .prev,
+        .banner:hover .next {
+            display: block;
+        }
+        /* 圆点 */
+        .banner ol {
+            position: absolute;
+            bottom: 15px;
+            display: flex;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 13px;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 20px;
+        }
+        /* 圆点样式 */
+        .banner ol li {
+            width: 8px;
+            height: 8px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin: 3px;
+        }
+        /* 设置第二个圆点为黄色 */
+        .banner ol li:nth-child(2) {
+            background-color: #ffce0c;
+        }
+        /* 鼠标悬浮是变为抓手光标 */
+        .banner ol li:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- banner -->
+    <div class="banner">
+        <ul>
+            <li><a href="#"><img src="./taobao.png"></a></li>
+            <li><a href="#"><img src="./taobao.png"></a></li>
+            <li><a href="#"><img src="./taobao.png"></a></li>
+            <li><a href="#"><img src="./taobao.png"></a></li>
+        </ul>
+        <!-- 箭头 -->
+        <a href="#">
+            <div class="prev">
+                <</div>
+        </a>
+        <a href="#">
+            <div class="next">></div>
+        </a>
+        <!-- 圆点 -->
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </div>
+</body>
+
+</html>

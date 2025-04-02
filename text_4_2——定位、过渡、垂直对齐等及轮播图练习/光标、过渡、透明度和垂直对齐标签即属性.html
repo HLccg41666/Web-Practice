@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多种属性</title>
+    <style>
+        /* 垂直对齐:vertical-align */
+        /* 属性添加在大块里面，浏览器默认把行内块和行内显示模式进行基线对齐 */
+        img {
+            width: 300px;
+            height: 300px;
+            vertical-align: middle;
+            /*居中*/
+            /* vertical-align: top; 顶对齐*/
+            /* vertical-align: bottom; 底对齐*/
+            /* vertical-align: baseline; 基线对齐（默认）底部会出现空白，加vertical-align和display：block可以解决*/
+
+        }
+
+        .div1 {
+            border: 2px solid black;
+        }
+
+        /* 过渡 */
+        /*  */
+        .div2 img {
+            width: 200px;
+            height: 200px;
+            transition: all 1s;
+            /*过渡属性：过渡的属性（可以是具体属性也可以利用“all”实现所有不同状态的属性都变化） 时间*/
+        }
+
+        .div2 img:hover {
+            width: 500px;
+            height: 500px;
+        }
+        /* 透明度：opacity */
+        .div3 {
+            width: 300px;
+            height: 400px;
+            opacity: 0.4;
+            background-color: pink;
+        }
+        /* 光标属性：cursor */
+        .div4 {
+            width: 300px;
+            height: 300px;
+            background-color: #6ad65e;
+            cursor: default;/*默认*/
+            cursor: pointer;/*小手*/
+            cursor: text;/*工字符号*/
+            cursor: move;/*移动的四面箭头*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <img src="../text_3_30——”学成在线“网页设计（模仿练习）/upload/uesr.jpg" title="我是小八">
+        这是小八
+    </div>
+    <div class="div2">
+        <img src="../text_3_30——”学成在线“网页设计（模仿练习）/upload/uesr.jpg" alt="我是会变大的小八" title="我是会变大的小八">
+    </div>
+    <div class="div3"><img src="../text_3_30——”学成在线“网页设计（模仿练习）/upload/uesr.jpg" title="我是变透明的小八"></div>
+    <div class="div4" title="我是光标属性"></div>
+</body>
+
+</html>

@@ -1,0 +1,317 @@
+/* 储存各个页面相同的属性 */
+.wrapper {
+    margin: 0 auto;
+    width: 1240px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* ————————快捷导航———————— */
+.shortcut {
+    height: 53px;
+    background-color: #333333;
+}
+
+.shortcut .wrapper {
+    height: 53px;
+}
+
+.shortcut ul {
+    display: flex;
+    /*右对齐*/
+    justify-content: end;
+}
+
+.shortcut ul li a {
+    color: #dcdcdc;
+    font-size: 14px;
+    line-height: 53px;
+    padding: 0 15px;
+    border-right: 1px solid #dcdcdc;
+}
+
+.shortcut ul li a:hover {
+    color: #27ba9b;
+}
+
+/* 第一个li为绿色 */
+/* .shortcut ul li:first-child a {
+    color: rgb(33, 116, 24);
+} */
+
+.shortcut ul li:last-child a {
+    /*取消最后一个的边框*/
+    border-right: none;
+    vertical-align: middle;
+
+}
+
+.shortcut .iconfont {
+    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+}
+
+
+
+/* ——————————头部———————— */
+.header {
+    display: flex;
+    margin: 22px auto;
+    height: 88px;
+}
+
+/* logo */
+.logo {
+    width: 200px;
+    height: 88px;
+}
+
+.logo h1 a {
+    display: block;
+    width: 200px;
+    height: 88px;
+}
+
+.logo h1 a img {
+    /* margin-top: 11px; */
+    width: 200px;
+    height: 66px;
+}
+
+/* 补充：通常上内容居中有两种方式：
+        1.加行高：line-height（作用于单行文本内容与父级的height相同的行高）
+        2.变成flex布局：使用justify-content和align-items属性。
+        3.对于inline和inline-block可以使用vertical-align属性
+        注意：对于替换元素如（img等）不受line-height的作用 */
+
+/* 导航 */
+.nav {
+    /* height: 88px; 1 */
+    display: flex;
+    align-items: center;
+}
+
+.nav ul {
+    margin-left: 50px;
+    height: 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.nav ul li {
+    /* line-height: 88px; 1 */
+    padding-right: 40px;
+
+}
+
+.nav ul li a {
+    font-size: 17px;
+    color: #333333;
+    padding-bottom: 4px;
+}
+
+.nav ul li a:hover {
+    color: #27ba9b;
+    border-bottom: 1px solid #27ba9b;
+}
+
+/* 搜索框 */
+.search {
+    line-height: 88px;
+}
+
+.search span {
+    margin-left: 10px;
+}
+
+.search span img {
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+    margin-right: 10px;
+    opacity: 0.7;
+}
+
+.search input {
+    /* 若flex:1,input不生效
+        可使用width:0。重置input宽度 */
+    width: 165px;
+    height: 29px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #aeaeae;
+}
+
+/* 购物车 */
+.cart {
+    position: relative;
+    height: 88px;
+    display: flex;
+    justify-content: center;
+}
+
+.cart img {
+    width: 24px;
+    height: 24px;
+    align-self: center;
+}
+
+.cart span {
+    position: absolute;
+    top: 26px;
+    left: 19px;
+    display: block;
+    width: 18px;
+    height: 14px;
+    background-color: #e26237;
+    border-radius: 50%;
+    /* 文字内容属性 */
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    line-height: 14px;
+}
+
+
+
+/* ————————底部———————— */
+.footer {
+    position: relative;
+    height: 580px;
+    background-color: #333333;
+}
+
+/* 服务 */
+.service {
+    padding: 60px 0;
+    height: 178px;
+    border-bottom: 1px solid #cbcbcbcb;
+}
+
+.service ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.service ul li {
+    display: flex;
+    align-items: center;
+    width: 190px;
+    height: 58px;
+}
+
+.service ul li h4 {
+    margin-right: 20px;
+    width: 58px;
+    height: 58px;
+    background-image: url(../images/sprites.png);
+}
+
+.service ul li:nth-child(2) h4 {
+    background-position: 270px 1px;
+}
+
+.service ul li:nth-child(3) h4 {
+    background-position: 335px 1px;
+}
+
+.service ul li:nth-child(4) h4 {
+    background-position: 0px 1px;
+}
+
+.service ul li p {
+    font-size: 28px;
+    color: #e8e8e8;
+}
+
+/* 帮助中心 */
+.help {
+    display: flex;
+    justify-content: space-between;
+    height: 250px;
+    margin-top: 60px;
+}
+
+.help .left {
+    display: flex;
+}
+
+.left dl {
+    margin-right: 84px;
+}
+
+.left dt {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #ebebeb;
+}
+
+.left dd {
+    font-size: 16px;
+    margin-bottom: 8px;
+
+}
+
+.left a {
+    color: #e8e8e8a1;
+}
+
+.left a:hover {
+    color: #f7f7f7e0;
+}
+
+/* right */
+.right ul {
+    display: flex;
+}
+
+.right ul li:first-child {
+    margin-right: 55px;
+}
+
+.right .pic {
+    margin-top: 10px;
+    width: 120px;
+    height: 120px;
+}
+
+.right p {
+    color: #e8e8e8a1;
+    text-align: center;
+}
+
+/* 版权 */
+.copyright {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.copyright p {
+    justify-content: center;
+    display: flex;
+    color: #aeaeae;
+}
+
+.copyright p a {
+    display: inline-block;
+    margin: 0 8px;
+    color: #aeaeae;
+}
+
+.copyright p a:hover {
+    color: #f7f7f7e0;
+}

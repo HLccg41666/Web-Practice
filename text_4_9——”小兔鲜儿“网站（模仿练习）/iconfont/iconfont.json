@@ -1,0 +1,30 @@
+{
+  "id": "4886964",
+  "name": "小兔鲜儿",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "34452779",
+      "name": "business-icon-sales-center",
+      "font_class": "business-icon-sales-center",
+      "unicode": "e824",
+      "unicode_decimal": 59428
+    },
+    {
+      "icon_id": "34453232",
+      "name": "mobile-phone",
+      "font_class": "mobile-phone",
+      "unicode": "e85c",
+      "unicode_decimal": 59484
+    },
+    {
+      "icon_id": "34453244",
+      "name": "phone",
+      "font_class": "phone",
+      "unicode": "e860",
+      "unicode_decimal": 59488
+    }
+  ]
+}

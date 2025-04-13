@@ -1,3 +1,322 @@
-.shortcut {
-    height: 53px;
+/* banner区域 */
+.banner {
+    background-color: #f2f2f2;
+    height: 500px;
+}
+
+.banner .wrapper {
+    width: 1240px;
+    position: relative;
+}
+
+/* 大图区域 */
+.banner .pic {
+    display: flex;
+    overflow: hidden;
+}
+
+/* 侧导航 */
+.subnav {
+    width: 250px;
+    height: 500px;
+    background-color: #000000c3;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.subnav li {
+    height: 50px;
+    line-height: 50px;
+    padding-left: 30px;
+    padding-right: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.subnav li:hover {
+    cursor: pointer;
+    background-color: #5ec99e;
+}
+
+.subnav a {
+    font-size: 14px;
+    color: #ffffff;
+    margin-right: 5px;
+}
+
+.subnav .firstA {
+    font-size: 16px;
+    margin-right: 14px;
+}
+
+.subnav span {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+/* 圆点指示器 */
+.banner ol {
+    position: absolute;
+    bottom: 16px;
+    left: 60%;
+    transform: translateX(-60%);
+    display: flex;
+}
+
+.banner ol li {
+    display: block;
+    margin: 3px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ffffff81;
+}
+
+.banner ol li:hover a,
+.banner ol li:first-child a {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 5px;
+    background-color: #ffffffd1;
+}
+
+
+/* 左右箭头 */
+.banner .prve,
+.banner .next {
+    height: 45px;
+    width: 50px;
+    background-color: #0000005c;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 10px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 24px;
+
+}
+
+.banner .prve {
+    left: 250px;
+}
+
+.banner .next {
+    right: 0;
+}
+
+/* 新鲜好物 */
+.goods {
+    height: 541px;
+}
+
+/* 标题区域————公共模式可共用 */
+.title {
+    padding: 40px 0 40px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title .left {
+    margin-left: 6px;
+    display: flex;
+}
+
+.title .left h3 {
+    color: #333333;
+    font-size: 36px;
+}
+
+.title .left span {
+    color: #999999;
+    font-style: 16px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    align-self: flex-end;
+}
+
+.title .right {
+    color: #999999;
+    font-size: 16px;
+    margin-bottom: 5px;
+    align-self: flex-end;
+}
+
+.title .right span {
+    margin: 5px;
+    color: #999999;
+
+}
+
+/* 内容 */
+.contents {
+    height: 406px;
+}
+
+.contents ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.goods .contents ul li {
+    width: 306px;
+    text-align: center;
+    background-color: #f0f9f4;
+}
+
+.contents .pic {
+    width: 306px;
+    height: 306px;
+}
+
+.contents .txt {
+    margin: 22px 0 14px 0;
+    font-size: 18px;
+    color: #333333;
+}
+
+.contents .price {
+    padding-bottom: 6px;
+    color: #9a2e1f;
+}
+
+.contents .price span {
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.commend {
+    height: 541px;
+}
+
+.commend .contents ul li {
+    width: 306px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.commend .desc {
+    color: #999999;
+    font-size: 17px;
+    padding-bottom: 6px;
+}
+
+/* 秒杀专区 */
+.goods_seckill {
+    /* height: 420px; */
+    background-color: #f5f5f5;
+    padding-bottom: 55px;
+}
+
+.goods_seckill .wrapper {
+    width: 1240px;
+}
+
+.goods_seckill ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.goods_seckill ul li {
+    width: 240px;
+    height: 315px;
+    /* padding-top: 20px; */
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.goods_seckill ul li:hover p {
+    cursor: pointer;
+    color: #a72312;
+}
+
+.goods_seckill .pic {
+    width: 174px;
+    height: 174px;
+}
+
+.goods_seckill .name {
+    font-size: 18px;
+    margin: 20px 0 12px 0;
+    color: #333333;
+}
+
+.goods_seckill .precent {
+    display: block;
+    width: 165px;
+    height: 6px;
+    margin: 0 auto 12px;
+    border-radius: 6px;
+    background-color: #E2E2E2;
+}
+
+.goods_seckill .precent .inner {
+    display: block;
+    width: 30%;
+    height: 100%;
+    border-radius: 6px;
+    background-color: #D54847;
+}
+
+.goods_seckill .now_price {
+    font-size: 20px;
+    color: #9a2e1f;
+    margin-right: 5px;
+}
+
+.goods_seckill .pre_price {
+    color: #999999;
+    font-size: 16px;
+}
+
+/* 倒计时 */
+.goods_seckill .countdown {
+    background-color: #f5f5f5;
+}
+
+.goods_seckill .countdown .next {
+    margin: 25px 0 14px 0;
+    font-size: 16px;
+    color: #9a2e1f;
+}
+
+.goods_seckill .countdown h3 {
+    font-size: 33px;
+    color: #D54847;
+}
+
+.goods_seckill .countdown .tips {
+    margin-top: 106px;
+    display: inline-block;
+}
+
+.goods_seckill .countdown .tips .span1 {
+    font-size: 30px;
+    color: #D54847;
+}
+
+.goods_seckill .countdown .tips .span2 {
+    font-style: 16px;
+}
+
+.countdown .clock {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.countdown .clock span {
+    text-align: center;
+    line-height: 34px;
+    display: block;
+    width: 34px;
+    height: 34px;
+    background-color: #404040;
+    margin: 0 5px 0 5px;
+    color: white;
+    font-size: 18px;
 }

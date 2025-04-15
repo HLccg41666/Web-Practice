@@ -1,9 +1,10 @@
-/* banner区域 */
+/* ————————banner区域—————————— */
 .banner {
     background-color: #f2f2f2;
     height: 500px;
 }
 
+/* banner区域版心居中 */
 .banner .wrapper {
     width: 1240px;
     position: relative;
@@ -45,6 +46,7 @@
     margin-right: 5px;
 }
 
+/* 第一个a标签为大号文字 */
 .subnav .firstA {
     font-size: 16px;
     margin-right: 14px;
@@ -57,6 +59,7 @@
 
 /* 圆点指示器 */
 .banner ol {
+    /* 父相子绝 */
     position: absolute;
     bottom: 16px;
     left: 60%;
@@ -73,6 +76,7 @@
     background-color: #ffffff81;
 }
 
+/* 设置所选大图对应和鼠标悬停的圆点效果（后面js补充） */
 .banner ol li:hover a,
 .banner ol li:first-child a {
     display: block;
@@ -108,7 +112,7 @@
     right: 0;
 }
 
-/* 新鲜好物 */
+/* ————————新鲜好物———————— */
 .goods {
     height: 541px;
 }
@@ -123,6 +127,8 @@
 .title .left {
     margin-left: 6px;
     display: flex;
+    color: #999999;
+
 }
 
 .title .left h3 {
@@ -131,7 +137,6 @@
 }
 
 .title .left span {
-    color: #999999;
     font-style: 16px;
     margin-left: 20px;
     margin-bottom: 5px;
@@ -151,7 +156,7 @@
 
 }
 
-/* 内容 */
+/* 内容区域————公共样式 */
 .contents {
     height: 406px;
 }
@@ -161,23 +166,27 @@
     justify-content: space-between;
 }
 
+/* goods选择器内的contents的ul li  */
 .goods .contents ul li {
     width: 306px;
     text-align: center;
     background-color: #f0f9f4;
 }
 
+/* 内容图片样式 */
 .contents .pic {
     width: 306px;
     height: 306px;
 }
 
+/* 内容文本样式 */
 .contents .txt {
     margin: 22px 0 14px 0;
     font-size: 18px;
     color: #333333;
 }
 
+/* 内容价格区域 */
 .contents .price {
     padding-bottom: 6px;
     color: #9a2e1f;
@@ -188,6 +197,7 @@
     margin-left: 5px;
 }
 
+/* ————————人气推荐———————— */
 .commend {
     height: 541px;
 }
@@ -215,12 +225,13 @@
     width: 1240px;
 }
 
-.goods_seckill ul {
+/* 这个ul样式————公共样式 */
+.seckill_brand_common_ul {
     display: flex;
     justify-content: space-between;
 }
 
-.goods_seckill ul li {
+.seckill_brand_common_ul li {
     width: 240px;
     height: 315px;
     /* padding-top: 20px; */
@@ -229,22 +240,26 @@
     padding: 20px;
 }
 
-.goods_seckill ul li:hover p {
+/* 鼠标悬停时文本样式 */
+.goods_seckill li:hover p {
     cursor: pointer;
     color: #a72312;
 }
 
+/* 图片样式 */
 .goods_seckill .pic {
     width: 174px;
     height: 174px;
 }
 
+/* 标题样式 */
 .goods_seckill .name {
     font-size: 18px;
     margin: 20px 0 12px 0;
     color: #333333;
 }
 
+/* 百分比进度条 */
 .goods_seckill .precent {
     display: block;
     width: 165px;
@@ -254,6 +269,7 @@
     background-color: #E2E2E2;
 }
 
+/* 进度条颜色部分 */
 .goods_seckill .precent .inner {
     display: block;
     width: 30%;
@@ -262,12 +278,14 @@
     background-color: #D54847;
 }
 
+/* 优惠后价格 */
 .goods_seckill .now_price {
     font-size: 20px;
     color: #9a2e1f;
     margin-right: 5px;
 }
 
+/* 优惠前价格 */
 .goods_seckill .pre_price {
     color: #999999;
     font-size: 16px;
@@ -303,6 +321,7 @@
     font-style: 16px;
 }
 
+/* 时钟区域 */
 .countdown .clock {
     display: flex;
     justify-content: center;
@@ -319,4 +338,79 @@
     margin: 0 5px 0 5px;
     color: white;
     font-size: 18px;
+}
+
+.topical_brand {
+    padding-bottom: 32px;
+}
+
+.topical_brand .right span {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-color: #48a026;
+    text-align: center;
+    font-size: 26px;
+    line-height: 20px;
+    color: #ffffff;
+}
+
+.topical_brand .right .span1 {
+    background-color: #bfbfbf;
+}
+
+.topical_brand .right .span1:hover {
+    background-color: #48a026;
+}
+
+/* topical_brand区域特殊的li样式 */
+.topical_brand .seckill_brand_common_ul li {
+    width: 240px;
+    height: 305px;
+    padding: 0;
+
+}
+
+/* topical_brand区域特殊的.pic样式 */
+.topical_brand .seckill_brand_common_ul .pic {
+    width: 240px;
+    height: 305px;
+}
+
+/* 商品分类 */
+.goods_category {
+    background-color: #f5f5f5;
+    padding-bottom: 80px;
+}
+
+.goods_category .wrapper {
+    width: 1240px;
+}
+
+/* 特殊的title属性 */
+.goods_category .title h3 {
+    font-size: 32px;
+}
+
+.goods_category .title .right {
+    display: flex;
+    align-items: flex-end;
+}
+
+.goods_category .title .right .tabs-bar {
+    margin-right: 40px;
+    padding-top: 13px;
+}
+
+.goods_category .title .right .tabs-bar a {
+    display: inline-block;
+    margin-left: 7px;
+    padding: 2px 8px;
+}
+
+.goods_category .tabs-bar .firstA,
+.goods_category .tabs-bar a:hover {
+    background-color: #5EB68F;
+    border-radius: 5px;
+    color: #fff;
 }

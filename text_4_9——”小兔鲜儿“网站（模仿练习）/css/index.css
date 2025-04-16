@@ -492,23 +492,27 @@
     color: #fff;
     text-align: center;
 }
-.category_goods_list .cover h4{
+
+.category_goods_list .cover h4 {
     font-weight: 400;
     margin-top: 10px;
     font-size: 18px;
 }
+
 .category_goods_list .cover span {
     display: block;
     width: 120px;
     height: 0.5px;
     background-color: #fff;
-    margin: 0 auto  ;
+    margin: 0 auto;
     margin-top: 8px;
 }
-.category_goods_list .cover p{
+
+.category_goods_list .cover p {
     font-size: 14px;
     margin-top: 6px;
 }
+
 .category_goods_list ul li:hover .cover {
     bottom: 0px;
     transition: all 0.5s;
@@ -516,4 +520,156 @@
 
 .category_goods_list ul li:hover {
     border: 1px solid #53b094;
+}
+
+/* 最新专题 */
+.topic {
+    /* height: 472px; */
+}
+
+
+
+.topic ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.topic ul li {
+    width: 406px;
+    height: 357px;
+    position: relative;
+
+}
+
+.topic img {
+    width: 406px;
+    height: 287px;
+}
+
+.topic .meta {
+    width: 406px;
+    height: 287px;
+    color: #fff;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent 50%);
+}
+
+.topic .name {
+    position: absolute;
+    left: 10px;
+    bottom: 90px;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.topic .name small {
+    font-size: 19px;
+    color: #999999;
+}
+
+.topic .price {
+    position: absolute;
+    right: 10px;
+    bottom: 95px;
+    background-color: #fff;
+    color: #9a2e1f;
+    border-radius: 5px;
+}
+
+.topic .price span {
+    padding: 4px 8px 4px 7px;
+    display: inline-block;
+    font-size: 17px;
+
+}
+
+.topic .social {
+    padding: 0 20px;
+    height: 70px;
+    line-height: 70px;
+    display: flex;
+    position: relative;
+}
+
+.topic .like {
+    margin-right: 25px;
+    color: #999999;
+    font-size: 16px;
+}
+
+.topic .like span {
+    margin-left: 5px;
+    color: #666666;
+}
+
+.topic .view {
+    margin-right: 25px;
+    color: #999999;
+    font-size: 16px;
+}
+
+.topic .view span {
+    margin-left: 5px;
+    color: #666666;
+}
+
+.topic .reply {
+    margin-right: 25px;
+    color: #999999;
+    font-size: 16px;
+    position: absolute;
+    right: 0px;
+}
+
+.topic .reply span {
+    margin-left: 5px;
+    color: #666666;
+}
+
+.discuss {
+    height: 524px;
+    margin-bottom: 80px;
+}
+
+.discuss ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.discuss ul li {
+    width: 406px;
+}
+
+.discuss img {
+    width: 406px;
+    height: 195px;
+}
+
+.discuss .meta {
+    width: 100%;
+    padding: 20px;
+    padding-top: 20px;
+    margin-left: 16px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+.discuss .name {
+    color: #333;
+    font-size: 22px;
+}
+.discuss .name small{
+    font-size: 16px;
+    color: #999999;
+}
+.discuss .price{
+    font-size: 18px;
+    color: #9a2e1f;
+    align-self: center;
+}
+
+.discuss .message {
+    margin-top: 10px;
+    padding: 0 16px;
+    color: #666666;
+    font-size: 17px;
 }

@@ -377,7 +377,8 @@
     height: 305px;
 }
 
-/* 商品分类 */
+
+/* ————————商品分类———————— */
 .goods_category {
     background-color: #f5f5f5;
     padding-bottom: 80px;
@@ -413,4 +414,106 @@
     background-color: #5EB68F;
     border-radius: 5px;
     color: #fff;
+}
+
+/* 商品列表区域 */
+.category_goods_list {
+    height: 610px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.category_goods_list .right {
+    width: 240px;
+    height: 610px;
+}
+
+.category_goods_list .left_pic {
+    width: 240px;
+    height: 610px;
+    margin: 0;
+}
+
+.category_goods_list ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category_goods_list ul li {
+    background-color: #fff;
+    width: 240px;
+    height: 300px;
+    padding: 10px 30px;
+    margin-left: 10px;
+    position: relative;
+    border: 1px solid #ffffff;
+    overflow: hidden;
+}
+
+/* 从第五个开始有上边距 */
+.category_goods_list ul li:nth-child(n+5) {
+    margin-top: 10px;
+}
+
+.category_goods_list .goods_pic {
+    width: 160px;
+    height: 160px;
+    margin: 0 10px;
+}
+
+.category_goods_list .name {
+    color: #333333;
+    margin-top: 6px;
+    height: 44px;
+}
+
+.category_goods_list .goods_desc {
+    color: #666666;
+    margin-top: 6px;
+}
+
+.category_goods_list .price {
+    color: #ac3737;
+    margin-top: 9px;
+}
+
+.category_goods_list .price span {
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.category_goods_list .cover {
+    width: 240px;
+    height: 86px;
+    background-color: #53b094;
+    position: absolute;
+    left: 0;
+    bottom: -87px;
+    color: #fff;
+    text-align: center;
+}
+.category_goods_list .cover h4{
+    font-weight: 400;
+    margin-top: 10px;
+    font-size: 18px;
+}
+.category_goods_list .cover span {
+    display: block;
+    width: 120px;
+    height: 0.5px;
+    background-color: #fff;
+    margin: 0 auto  ;
+    margin-top: 8px;
+}
+.category_goods_list .cover p{
+    font-size: 14px;
+    margin-top: 6px;
+}
+.category_goods_list ul li:hover .cover {
+    bottom: 0px;
+    transition: all 0.5s;
+}
+
+.category_goods_list ul li:hover {
+    border: 1px solid #53b094;
 }

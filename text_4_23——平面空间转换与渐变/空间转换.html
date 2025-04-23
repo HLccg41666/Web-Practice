@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>空间转换</title>
+    <style>
+        /* 注意对于空间属性来说。通常需要添加 视距属性perspective（800-1200px）来体现出z轴的近大远小的视图*/
+        /* perspective添加给直接父级 */
+
+        /* 空间移动 */
+        .yidong {
+            perspective: 1000px;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            transition: all 0.5s;
+            margin: 100px auto;
+        }
+
+        .yidong .box:hover {
+            transform: translateX(100px);
+            transform: translatey(100px);
+            transform: translate3d(100px, 200px, -100px);
+            /* transform: translateZ(-100px); */
+        }
+
+        /* 空间旋转 */
+        /* 左手法则：大拇指与坐标轴同向，四指则为正值数的方向 */
+        .xuanzhuan {
+            perspective: 800px;
+        }
+
+        .xuanzhuan .box:hover {
+            transform: rotateX(-60deg);
+            /* transform: rotatey(45deg); */
+            /* transform: rotatez(70deg); */
+            /* transform: rotate3d(-60deg,45deg,70deg);——————自定义旋转轴 */
+        }
+
+        /* 立体呈现————transform-style */
+        /*  1.父级添加
+            2.子级定位
+            3.调整子级盒子的位置（位移，旋转等） */
+        .DDD {
+            transform-style: preserve-3d;
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            position: relative;
+            transition: all 2s;
+        }
+
+        .DDD div {
+            height: 100px;
+            width: 100px;
+            top: 0;
+            left: 0;
+            position: absolute;
+            /* transform: rotateY(50deg); */
+        }
+
+        .front {
+            background-color: orange;
+            transform: translateZ(100px);
+        }
+
+        .back {
+            transform: translateZ(-100px);
+            background-color: #3f88dc;
+        }
+
+        .DDD:hover {
+            transform: rotateY(-258deg)  rotate(40deg);
+        }
+
+        /* 空间缩放(很少使用) */
+        /* z轴的缩放需要使用上面的立体呈现可以直观感受 */
+        .suofang {
+            perspective: 1000px;
+        }
+
+        .suofang .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            transition: all 0.5s;
+            margin: 100px auto;
+        }
+
+        .suofang .box:hover {
+            transform: scale3d(2, 1.5, 1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="yidong">
+        <div class="box"></div>
+    </div>
+    <div class="xuanzhuan">
+        <div class="box"></div>
+    </div>
+    <div class="DDD">
+        <div class="front"></div>
+        <div class="back"></div>
+    </div>
+    <div class="suofang">
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>渐变</title>
+    <style>
+        div{
+            background-color: pink;
+            width: 100px;
+            height: 100px;
+        }
+        /* 线性渐变——常用于图片的半透明 */
+        .xianxing{
+            background-image:linear-gradient(
+                /* 渐变方向（to 方向 or 角度）,
+                    颜色一 终点（百分比）,
+                    颜色二 终点,*/
+                to right,
+                pink,
+                rgb(118, 226, 245)
+            );
+            background-image:linear-gradient(
+                /* 渐变方向（to 方向 or 角度）,
+                    颜色一 终点（百分比）,
+                    颜色二 终点,*/
+                to bottom,/*默认方向*/
+                pink,
+                rgb(118, 226, 245)
+            );
+        }
+        /* 径向渐变——常用于按钮的高亮处理 */
+        .jingxiang{
+            background-image:radial-gradient(
+                /* 半径 at 圆心位置
+                    颜色一 终点
+                    颜色二 终点 */
+                    /* 补充：半径可以有两个（效果类似为椭圆）
+                            圆心位置取值：像素值/方位值/百分比 */
+                50px at center center,
+                rgb(225, 71, 187),
+                rgba(255, 255, 255, 0.436)
+            );
+            background-image:radial-gradient(
+                /* 半径 at 圆心位置
+                    颜色一 终点
+                    颜色二 终点 */
+                    /* 补充：半径可以有两个（效果类似为椭圆）
+                            圆心位置取值：像素值/方位值/百分比 */
+                50px 20px at 20px 20px ,
+                rgb(225, 71, 187),
+                rgba(255, 255, 255, 0.436)
+            );
+        }
+    </style>
+</head>
+<body>
+    <div class="xianxing"></div>
+    <div class="jingxiang"></div>
+</body>
+</html>

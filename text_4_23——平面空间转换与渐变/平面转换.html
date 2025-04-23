@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>平面转换</title>
+    <style>
+        /* CSS的平面转换：transform属性 */
+        /* 位移————translate(x,y) */
+        div{
+            background-color: pink;
+            width: 100px;
+            height: 100px;
+        }
+        .weiyi{
+            transform: translate(50px,50px);
+            transform: translatex(50px);
+            /* transform: translatey(50px); */
+        }
+        /* 旋转————rotate（deg） */
+        /* 注意: transform-origin 可以更改基点位置（默认为元素中心点）
+                 旋转后会更改坐标轴的轴向，会影响其他transform属性
+                 多重属性以第一个属性的坐标轴向为准*/
+        .xuanzhuang{
+            transform: rotate(45deg);
+            /* transform: rotate(-85deg); */
+            transform-origin: left bottom;
+        }
+        /* 缩放————scale（x，y） */
+        .suofang{
+            transform: scale(1.1,1);
+            transform: scale(1.1);
+            transform: scalex(1.2);
+            transform: scaley(1.2);
+        }
+        /* 扭曲————skew(deg,deg) */
+        .nuiqu{
+            transform: skew(20deg,20deg);
+            transform: skewx(30deg);
+            transform: skewy(-60deg);
+        }
+        /* 综合转换————matrix（scalex,skewx.skewy,scaley,translatex.translatey）较少使用 */
+        .zonghe{
+            transform:matrix(0.886,0.5,-0.5,0.886,50,400);
+        }
+        .zonghe2{
+            transform: translate(300px,50px) rotate(45deg)
+            scale(1.1,1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="weiyi"></div>
+    <div class="xuanzhuang"></div>
+    <div class="suofang"></div>
+    <div class="nuiqu"></div>
+    <div class="zonghe"></div>
+    <div class="zonghe2"></div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+h2 {
+    font-family: 楷体;
+    color: #333;
+    text-shadow: 2px 2px 2px #8d8d8d;
+}
+
+.divX {}
+
+.divY {}
+
+.divXY {}
+
+span{
+    color: rgb(27, 83, 181);
+    font-weight: 700;
+}
+
+.divX p:nth-child(1) {
+    text-align: left;
+}
+
+.divX p:nth-child(2) {
+    text-align: center;
+}
+
+.divX p:nth-child(3) {
+    text-align: right;
+}
+
+.divY p:nth-child(1) img {
+    vertical-align: top;
+}
+
+.divY p:nth-child(2) img {
+    vertical-align: middle;
+}
+
+.divY p:nth-child(3) img {
+    vertical-align: bottom;
+}
+
+.divXY p:nth-child(1),
+.divXY p:nth-child(1) img {
+    vertical-align: top;
+    text-align: left;
+}
+
+.divXY p:nth-child(2),
+.divXY p:nth-child(2) img {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.divXY p:nth-child(3),
+.divXY p:nth-child(3) img {
+    text-align: right;
+    vertical-align: bottom;
+}
+
+#name {
+    text-shadow: 2px 2px 4px #164980;
+    font-size: 30px;
+    color: rgb(160, 104, 34);
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>liangjintaoB</title>
+    <style>
+        h2 {
+            font-family: 楷体;
+            color: #009;
+            text-shadow: 2px 2px 3px #929292;
+        }
+
+        .cn100pc {
+            line-height: 100%;
+        }
+
+        .cn200pc {
+            line-height: 200%;
+        }
+
+        .cn2x {
+            line-height: 2;
+        }
+
+        .cn20px {
+            line-height: 20px;
+        }
+
+        p {
+            background-color: #d8d8d8;
+        }
+
+        p.cn1 {
+            word-spacing: normal;
+            letter-spacing: normal;
+        }
+
+        p.cn2 {
+            word-spacing: 5px;
+            letter-spacing: 2px;
+        }
+
+        p.cn3 {
+            word-spacing: 3px;
+            letter-spacing: -2px;
+        }
+        span {
+            color: rgb(78, 192, 56);
+        }
+
+        #name {
+            text-shadow: 2px 2px 4px #86283e;
+            font-size: 20px;
+            color: rgb(203, 65, 178);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>段落行距设置</h2>
+    <p><span>默认行高度：</span>多数浏览器中，默认行高度大约是文字高度的110%到120%。</p>
+    <p class="cn100pc"><span>100%行高度：</span> 这个段落被设置为100%的行高度——行的高度即文字的高度，稍显拥挤。</p>
+    <p class="cn200pc"><span>200%行高度：</span> 这个段落的行高度被设置为200%，你会发现“line-height:200%”与“line-height:2”效果一样。</p>
+    <p class="cn2x"><span>2倍行高度：</span> 这个段落的行高度被设置为2，你会发现“line-height:2”与“line-height:200%”效果一样。</p>
+    <p class="cn20px"><span>20像素行高度：</span> 这个段落的行高度被设置为固定的20px（px即pixel的简写，译为像素）。</p>
+
+    <h2>字词间距设置</h2>
+    <p class="cn1"><span>标准间距：</span>We are Chinese. We love our motherland.</p>
+    <p class="cn2"><span>宽间距：</span>We are Chinese. We love our motherland.</p>
+    <p class="cn3"><span>窄间距：</span>We are Chinese. We love our motherland.</p>
+
+    <p id="name">作者：liangjintao</p>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>走马灯</title>
+    <style>
+        *{
+            list-style-type: none;
+            box-sizing: border-box;
+            padding: 0  ;
+            margin: 0;
+        }
+        .box{
+            margin: 100px auto;
+            width: 1200px;
+            height: 200px;
+            border: 2px solid black;
+            overflow: hidden;
+        }
+        img{
+            width: 400px;
+            height: 200px;
+        }
+        .box ul{
+            display: flex;
+            animation: move 8s linear infinite ;
+
+        }
+        .box:hover ul{
+            animation-play-state: paused;
+        }
+
+        @keyframes move {
+            0%{
+                transform: translateX(0);
+            }
+            100%{
+                transform: translateX(-4000px);
+            }
+        }
+
+        h2{
+            margin-top: 50px;
+            text-align: center;
+            font-size: 64px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h2>数数有几个小八</h2>
+    <div class="box">
+        <ul>
+            <li><img src="./img/DM_20250424174803_001.jpg" alt=""></li>
+            <li><img src="./img/DM_20250424174803_002.jpg" alt=""></li>
+            <li><img src="./img/DM_20250424174803_003.jpg" alt=""></li>
+            <li><img src="./img/DM_20250424174803_004.jpg" alt=""></li>
+            <li><img src="./img/DM_20250424174803_005.jpg" alt=""></li>
+            <li><img src="./img/DM_20250424174803_006.jpg" alt=""></li>
+            <li><img src="./img/DM_20250424174803_007.png" alt=""></li>
+            <li><img src="./img/DM_20250424174803_008.jpg" alt=""></li>
+            <li><img src="./img/DM_20250424174803_009.jpg" alt=""></li>
+            <li><img src="./img/DM_20250424174803_010.jpg" alt=""></li>
+
+            <!-- 无缝动画 -->
+             <!-- 复制前三张图片到后面填补一次动画运行完的空缺（张数为框框的width值） -->
+            <li><img src="./img/DM_20250424174803_001.jpg" alt=""></li>
+            <li><img src="./img/DM_20250424174803_002.jpg" alt=""></li>
+            <li><img src="./img/DM_20250424174803_003.jpg" alt=""></li>
+        </ul>
+    </div>
+</body>
+
+</html>

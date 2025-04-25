@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 精灵图</title>
+    <!-- 利用精灵图与速度曲线(steps)结合可以实现任务奔跑效果 -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            margin: 20px 0 0 20px;
+            width: 140px;
+            height: 140px;
+            background-image: url(./image.png);
+            /* 多组动画（逗号隔开） */
+            animation: 
+                change 1s steps(12) infinite,
+                move 5s linear forwards
+            
+        }
+        @keyframes change {
+            from{
+                background-position: 0 0;
+            }
+            to{
+                background-position: -1680px 0;
+            }
+        }
+        @keyframes move {
+            0%{
+                transform: translateX(0);
+            }
+            100%{
+                transform: translateX(1450px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

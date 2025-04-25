@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="lang">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动画</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+
+            /* animation属性 */
+            /* 规定的@keyframes名称(需要与其对应) */
+            animation-name: change;
+
+            /* 所用时间 */
+            animation-duration: 1s;
+
+            /* 速度曲线 */
+            /* 与transition相同 */
+            /* animation-timing-function: steps(3); 动画分为三段完成 */
+            animation-timing-function: ease;
+
+            /* 延迟时间 */
+            animation-delay: 2s;
+
+            /* 播放次数 */
+            /* 数值为n次或者infinite（无限重复） */
+            animation-iteration-count: infinite;
+            animation-iteration-count: 4;
+
+            /* 动画方向 */
+            /* 是否逆向播放（alternate）或 normal为不逆向 */
+            animation-direction: alternate;
+
+
+            /* 终止时的状态 */
+            /* backwards（默认在开头），forwards（结束终止） */
+            animation-fill-mode: backwards;
+            animation-fill-mode: forwards;
+
+            /* 复合属性 */
+            /* 注意复合属性包括以上属性但下面那个除外,且名字与时间周期属性必须填写 */
+            /* 两个时间时：第一个为时间周期，第二个为延迟时间 */
+            animation:change 3s ease-in 1s 5 alternate forwards;
+
+            
+
+        }
+        /* 动画暂停或运行(通常配合hover使用) */
+        .box:hover{
+                animation-play-state: paused;
+            }
+
+
+        /* 多组动画（分开写逗号隔开） */
+        .duo{
+            animation: name1 1s linear,
+                       name2 2s  ease;
+        }
+
+
+        /* 两种写法：1.from-to. 2.百分比 */
+
+        /*@keyframes change {
+            from {
+                width: 200px;
+            }
+
+            to {
+                width: 500px;
+            }
+
+        }*/
+        /* 百分比表示的是时间周期的百分比 */
+        @keyframes change {
+            0%{
+                width: 200px;
+            }
+            40%{
+                width: 500px;
+            }
+            100%{
+                width: 700px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

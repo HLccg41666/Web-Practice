@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>双开门</title>
+    <style>
+        .center{
+            margin: 100px auto;
+            width: 1000px;
+            height: 500px;
+            display: flex;
+            background-image: url(./center.png);
+            background-size: 1000px 500px;
+            overflow: hidden;
+        }
+        .left{
+            width: 500px;
+            height: 500px;
+            transition: all 0.5s;
+            background-image: url(./left.png);
+            background-size: 500px 500px;
+        }
+        .right{
+            width: 500px;
+            height: 500px;
+            transition: all 0.5s;
+            background-image: url(./right.png);
+            background-size: 500px 500px;
+        }
+        .center:hover .left{
+            transform:translateX(-500px)
+        }
+        .center:hover .right{
+            transform:translateX(500px)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+</body>
+
+</html>

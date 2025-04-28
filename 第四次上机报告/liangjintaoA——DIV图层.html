@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>liangjintaoA</title>
+    <style>
+        .father {
+            width: 600px;
+            height: 500px;
+            background-color: pink;
+        }
+
+        .son {
+            font-size: 20px;
+            font-family: 楷体;
+        }
+
+        .son li:nth-child(-n+3) span {
+            font-weight: 700;
+            text-decoration-line: underline;
+            color: red;
+            font-size: 24px;
+        }
+
+        .son li:nth-child(4) span {
+            font-weight: 700;
+            font-size: 24px;
+            font-style: italic;
+        }
+
+        img {
+            width: 500px;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <img src="./素材/A.jpg" alt="">
+        <div class="son">
+            <ul>
+                <li> 2017<span>央视</span>综艺节目发力 彰显公益大爱</li>
+                <li> 继北京、上海后，2017年<span>腾讯</span>视频推介会昨又在广州隆重举行</li>
+                <li><span> “跨界融合 开放共赢”</span>移动互联网营销峰会</li>
+                <li> 首届<span>“联建杯”</span>户外LED显示屏媒体大赛评审圆满落幕</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

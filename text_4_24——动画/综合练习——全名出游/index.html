@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>综合练习——全名出游</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+   
+        .backgroud {
+            position: relative;
+            height: 100vh;
+            background-image: url(./img/istockphoto-1324192340-1024x1024.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .cover {
+            height: 100%;
+            width: 100%;
+            background-color: #00000013;
+        }
+
+        .text {
+            height: 658px;
+            width: 658px;
+            background-image: url(./img/51BJT.png);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: text 0.5s 1;
+        }
+
+        .cloud {
+            position: absolute;
+            top: 0;
+            left: 50%;
+        }
+
+        .cloud img {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            animation: cloud 1.5s infinite alternate linear 1s;
+        }
+
+        .cloud img:nth-child(1) {
+            left: -750px;
+            top: 100px;
+        }
+
+        .cloud img:nth-child(2) {
+            left: -550px;
+            top: 200px;
+            animation-delay: 0.2s;
+        }
+
+        .cloud img:nth-child(3) {
+            left: -300px;
+            top: 0;
+            animation-delay: 0.4s;
+        }
+
+        .cloud img:nth-child(4) {
+            left: 0;
+            top: 80px;
+            animation-delay: 0.6s;
+        }
+
+        .cloud img:nth-child(5) {
+            left: 150px;
+            top: 60px;
+            animation-delay: 0.8s;
+        }
+
+        .cloud img:nth-child(6) {
+            left: 250px;
+            top: 0;
+            animation-delay: 0.8s;
+        }
+
+        .cloud img:nth-child(7) {
+            left: 350px;
+            top: 150px;
+            animation-delay: 0.6s;
+        }
+
+        .cloud img:nth-child(8) {
+            left: 500px;
+            top: 100px;
+            animation-delay: 0.4s;
+        }
+        .button{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 100px;
+            width: 800px;
+        }
+        .button ul{
+            display: flex;
+            justify-content: space-between;
+        }
+        .button ul li{
+            text-align: center;
+        }
+            
+        .button img{
+            width: 100px;
+            height: 100px;
+        }
+        .button ul li:nth-child(1) img{
+            animation: xiaoba 0.5s alternate infinite ease-in-out 0.4s ;
+            
+        }
+        .button ul li:nth-child(2) img{
+            animation: xiaoba 0.5s alternate infinite ease-in-out 0.8s ;
+            
+        }
+        .button ul li:nth-child(3) img{
+            animation: xiaoba 0.5s alternate infinite ease-in-out 1.2s ;
+            
+        }
+        a{
+            display: block;
+            width: 200px;
+            font-size: 20px;
+            color: aliceblue;
+            text-decoration-line: none;
+            background-image: url(./img/button.png);
+            background-size: 200px,150px;
+            text-align: center;
+            line-height: 200px;
+            translate: all  0.5s;
+        }
+        a:hover{
+            transform: scale(1.1);
+        }
+
+        /* cloud模块的动画 */
+        @keyframes cloud {
+            100% {
+                transform: translateX(80px);
+            }
+        }
+
+        /* text模块的动画（小——变大——变小——默认） */
+        @keyframes text {
+            0% {
+                transform: translate(-50%, -50%) scale(0.1);
+            }
+
+            20% {
+                transform: translate(-50%, -50%) scale(4);
+
+            }
+
+            60% {
+                transform: translate(-50%, -50%) scale(0.2);
+
+            }
+    
+            100% {
+                transform: translate(-50%, -50%) scale(1);
+
+            }
+        }
+        @keyframes xiaoba {
+            100%{
+                transform: translateY(70px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="backgroud">
+        <div class="cover"></div>
+        <div class="text"></div>
+        <div class="cloud">
+            <img src="./img/LoveCloud.png" alt="">
+            <img src="./img/NormalCloud.png" alt="">
+            <img src="./img/LoveCloud.png" alt="">
+            <img src="./img/NormalCloud.png" alt="">
+            <img src="./img/LoveCloud.png" alt="">
+            <img src="./img/NormalCloud.png" alt="">
+            <img src="./img/LoveCloud.png" alt="">
+            <img src="./img/NormalCloud.png" alt="">
+        </div>
+        <div class="button">
+            <ul>
+                <li>
+                    <img src="./img/小八.png" alt="">
+                    <a href="#">开始了解</a>
+                </li>
+                <li>
+                    <img src="./img/小八.png" alt="">
+                    <a href="#">马上加入</a>
+                </li>
+                <li>
+                    <img src="./img/小八.png" alt="">
+                    <a href="#">遗憾退出</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

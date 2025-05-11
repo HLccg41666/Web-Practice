@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>等比适配方案</title>
+    <!-- 等比适配方案(宽高等比缩放)(移动端) -->
+    <!-- rem -->
+    <!-- 称为相关单位，相对于HTML标签字号的结算结果
+         1rem = 1 HTML字号大小
+         HTML字号大小通常设为视口的1/10（十分之一）  
+    -->
+    <style>
+        /* 单独使用（傻子） */
+        /* html{
+            font-size: 20px;
+        } */
+        .div1 {
+            width: 5rem;
+            height: 3rem;
+            background-color: pink;
+        }
+
+        /* 配合媒体查询使用(麻烦) */
+        /* 需要手动对不同的视口配置不同的媒体查询 */
+        @media (width:375px) {
+            html {
+                font-size: 37.5px;
+            }
+        }
+
+        @media (width:414px) {
+            html {
+                font-size: 41.4px;
+            }
+        }
+
+        @media (width:390px) {
+            html {
+                font-size: 39.0px;
+            }
+        }
+
+        /* 配合js方法（自动适配） */
+        /* 在body区域末尾写上<script src = "./---/flexible.js"></script>这个文件 */
+
+        /* px与rem的转换 */
+        /* rem = px / 字号大小（视口的十分之一） */
+        /* 插件自动计算——cssrem插件 */
+    </style>
+
+
+
+    <!-- vw -->
+
+
+
+    
+</head>
+
+<body>
+    <div class="div1"></div>
+
+    <script src="./flexible.js"></script>
+</body>
+
+</html>

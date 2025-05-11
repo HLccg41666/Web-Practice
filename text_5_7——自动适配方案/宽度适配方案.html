@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- 视口标签（默认，一般不用更改） -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>分辨率基础知识</title>
+    <!-- 分辨率 -->
+    <!-- 硬件分辨率(物理) -->
+    <!-- 缩放调节分辨率(逻辑)(代码参考) -->
+
+    <!-- 二倍图(避免失真，通常参考375px) -->
+    <style>
+        /* 宽度适配:
+                百分比布局
+                flex布局 
+        */
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .div1 {
+            background-color: pink;
+            height: 100px;
+            width: 50%;
+        }
+
+        .group{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .div2 {
+            background-color: orange;
+            height: 100px;
+            width: 100px;
+        }
+
+        .div3 {
+            background-color: green;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1"></div>
+    <div class="group">
+        <div class="div2"></div>
+        <div class="div3"></div>
+    </div>
+</body>
+
+</html>

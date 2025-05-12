@@ -1,44 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>表格</title>
+    <style>
+    </style>
 </head>
+
 <body>
     <h1>表格</h1>
-    <table border= "1" width="800px" height="300px">
-        <tr>
-            <th>姓名</th>
-            <th>年龄</th>
-            <th>性别</th>
-        </tr>
-        <tr>
-            <td>李四</td>
-            <td>39</td>
-            <td>男</td>
-        </tr>
-        <tr>
-            <td>张三</td>
-            <td>29</td>
-            <td>男</td>
-        </tr>
-        <tr>
-            <td>王五</td>
-            <td>19</td>
-            <td>女</td>
-        </tr>
-        <tr>
-            <td>赵六</td>
-            <td>49</td>
-            <td>男</td>
-        </tr>
-        <tr>
-            <td>小七</td>
-            <td>9</td>
-            <td>女</td>
-        </tr>
+    <!-- 表单一(基础) -->
+    <div class="div1">
+        <table border="1" width="800px" height="300px">
+            <tr>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>性别</th>
+            </tr>
+            <tr>
+                <td>李四</td>
+                <td>39</td>
+                <td>男</td>
+            </tr>
+            <tr>
+                <td>张三</td>
+                <td>29</td>
+                <td>男</td>
+            </tr>
+            <tr>
+                <td>王五</td>
+                <td>19</td>
+                <td>女</td>
+            </tr>
+            <tr>
+                <td>赵六</td>
+                <td>49</td>
+                <td>男</td>
+            </tr>
+            <tr>
+                <td>小七</td>
+                <td>9</td>
+                <td>女</td>
+            </tr>
+    </div>
     </table>
+    <!-- 表单二（排版） -->
+    <div class="div2" style="margin-top: 50px; font-family: 宋体; font-size: 20px;font-weight: 700;">
+        <table border="5" bordercolor="#666" width="800px" height="300px">
+            <tr align="center" valign="middle">
+                <td rowspan="2" bgcolor="green">1服务区</td>
+                <td colspan="2" bgcolor="orange">4共享区</td>
+            </tr>
+            <tr align="center" valign="middle">
+                <td bgcolor="red">5娱乐区</td>
+                <td rowspan="2" bgcolor="pink">3生活区</td>
+            </tr>
+            <tr align="center" valign="middle">
+                <td colspan="2" bgcolor="#525684">2行政区</td>
+            </tr>
+        </table>
+    </div>
 
 </body>
+
 </html>

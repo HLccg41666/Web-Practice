@@ -1,0 +1,57 @@
+// 利用EasyLess插件自动生成对应的css文件（浏览器不能识别less文件）
+// less是一个css预处理器 具有一定的计算能力 逻辑能力
+
+
+
+
+// 注释属性
+//单行注释（不能转化成css属性）
+/*块注释*/
+
+//less运算
+//注意：当运算式出现两个单位时，计算后以前面为准
+.father{
+    // 加减乘
+    width: 100+20px;
+    width: 100px-40rem;
+    width: 100*2px;
+    //除法(需要添加括号或者./)
+    width: (100/2px);
+    width: 100./4px;
+}
+
+// less的嵌套
+//补充：less嵌套时转化成css为自动生成父子级关系
+//注意：less嵌套时不能出现相同的选择器
+//补充：可以使用“&”来代表父子，嵌套时不会生成新的子级选择器
+.box{
+    width: 100px;
+    height: 100px;
+    .box1{
+        width: 50px;
+        height: 50px;
+        .box2{
+            width: 25px;
+            height: 25px;
+            &:hover{
+                background: red;
+            }
+        }
+    }
+}
+
+// less的变量
+//补充：less变量是全局的，不能在局部使用
+//补充：less变量的命名规则：以@开头，后面可以是字母、数字、下划线、连字符
+
+//定义变量
+@width: 100px;
+@height: 100px; 
+@color: red;
+
+//使用变量
+.box5{
+    width: @width;
+    height: @height;
+    background: @color;
+}

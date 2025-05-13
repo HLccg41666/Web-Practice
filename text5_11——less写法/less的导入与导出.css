@@ -1,0 +1,28 @@
+/*块注释*/
+.father {
+  width: 120px;
+  width: 60px;
+  width: 200px;
+  width: 50px;
+  width: 25px;
+}
+.box {
+  width: 100px;
+  height: 100px;
+}
+.box .box1 {
+  width: 50px;
+  height: 50px;
+}
+.box .box1 .box2 {
+  width: 25px;
+  height: 25px;
+}
+.box .box1 .box2:hover {
+  background: red;
+}
+.box5 {
+  width: 100px;
+  height: 100px;
+  background: red;
+}

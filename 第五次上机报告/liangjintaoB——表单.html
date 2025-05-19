@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>liangjintaoB——表单</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        body {
+            background-image: url(./bgimags.jpg);
+        }
+
+        form {
+            width: 1080px;
+            margin: 50px auto;
+            border: 15px solid #fff;
+        }
+
+        form h1 {
+            height: 120px;
+            text-align: center;
+            line-height: 120px;
+            color: #0033ff;
+            border-bottom: 2px solid #fff;
+        }
+
+        form p {
+            color: #3366ff;
+            text-align: left;
+            text-indent: 2em;
+            margin: 15px 0;
+        }
+
+
+        div {
+            border-top: 2px solid #fff;
+            text-indent: 1em;
+            padding: 15px 0;
+        }
+
+        .tab {
+            color: #3300cc;
+        }
+
+        .botton {
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <h1>大学生暑期社会实践调查问卷</h1>
+        <p>亲爱的同学：大家好! </p>
+        <p>为了更好的了解人们对近年来计
+            算机类专业填报火热现象的看法，特制定本问卷，希望得到您的配合，请认真阅读并
+            回答以下问题，您的回答将直接影响本调查的可信度和有效性，
+            真诚感谢您的支持，祝您天天愉快，谢谢! </p>
+
+        <div class="sex">
+            <label class="tab">1.你的性别：</label><label><input type="radio" name="gender" checked>男</label>
+            <label class><input type="radio" name="gender">女</label>
+        </div>
+
+        <div class="school">
+            <label class="tab">2.你的学校：</label><input type="text">
+        </div>
+
+        <div class="grade">
+            <label class="tab">3.你的年级：</label>
+            <select>
+                <option value="" disabled selected>请选择你的年级</option>
+                <option>大一</option>
+                <option>大二</option>
+                <option>大三</option>
+                <option>大四</option>
+            </select>
+        </div>
+
+        <div class="profession-suggest">
+            <label class="tab">4.您对该专业的建议：</label>
+            <br>
+            <br>
+            <ul>
+                <li>
+                    <label><input type="checkbox"> 招收时重质不重量</label>
+                </li>
+                <li>
+                    <label><input type="checkbox"> 师资力量要改进</label>
+                </li>
+                <li>
+                    <label><input type="checkbox"> 要更适应社会需要</label>
+                </li>
+                <li>
+                    <label><input type="checkbox"> 加强专业实验室建设</label>
+                </li>
+                <li>
+                    <label><input type="checkbox"> 其他</label>
+                </li>
+            </ul>
+        </div>
+
+        <div class="practice">
+            <label style="display:block;" class="tab">5.您认为该专业学生有必要参加社会实践：</label>
+            <br>
+            <label style="margin-left: 15px;"><input type="radio" name="shifou">有必要</label>
+            <label><input type="radio" name="shifou">没有必要</label>
+            <label><input type="radio" name="shifou">无所谓</label>
+        </div>
+
+        <div class="school-suggest">
+            <label class="tab">6.您对学校的建议：</label>
+            <br>
+            <br>
+            <textarea style="margin-left: 15px;" rows="5" cols="100">请您提出宝贵的建议：</textarea>
+        </div>
+
+        <div class="botton">
+            <input style="margin-right: 40px;" type="submit" value=" 提交答案 ">
+            <input type="reset" value=" 清 空 ">
+        </div>
+
+
+
+
+    </form>
+</body>
+
+</html>

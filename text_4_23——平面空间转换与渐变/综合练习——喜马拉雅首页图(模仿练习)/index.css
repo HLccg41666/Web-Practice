@@ -1,0 +1,225 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #72727b;
+}
+
+a {
+    text-decoration-line: none;
+    color: #72727b;
+}
+
+li {
+    list-style-type: none;
+}
+
+.wrapper {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+/* 头部 */
+.header {
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.header .wrapper {
+    display: flex;
+
+}
+
+/* logo */
+.logo {
+    width: 154px;
+    height: 60px;
+}
+
+.logo a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-image: url(./images/logo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-size: 0px;
+    background-position: center;
+}
+
+/* header-nav区域 */
+.header-nav {
+    margin-left: 15px;
+    height: 60px;
+    text-align: center;
+    position: relative;
+    line-height: 60px;
+}
+
+.header-nav a {
+    display: inline-block;
+    width: 80px;
+    height: 60px;
+}
+
+.header-nav .tab-a {
+    width: 60px;
+}
+
+.header-nav span {
+    display: inline-block;
+    height: 60px;
+    font-size: 14px;
+}
+
+.header-nav a:first-child span {
+    font-size: 16px;
+    color: #40404c;
+}
+
+/*  小箭头——这里是使用了一个小盒子的边框属性与旋转 */
+.header-nav .tab-a::after {
+    content: '^';
+    position: relative;
+    left: 3px;
+    text-indent: -99999px;
+    overflow: hidden;
+    width: 7px;
+    height: 7px;
+    border: 1px solid #ccc;
+    transform: rotate(135deg);
+    display: inline-block;
+    border-left: 0;
+    border-bottom: 0;
+    top: -2px;
+    transition: 0.3s ease-in-out;
+}
+
+.header-nav .tab-a:hover::after {
+    transform: rotate(-45deg);
+}
+
+.header-nav .bottom-action {
+    display: inline-block;
+    height: 3px;
+    width: 32px;
+    bottom: 0;
+    background: #f86442;
+    left: 24px;
+    transition: .3s;
+    position: absolute;
+}
+
+/* 注意：.header-nav .tab-a:hover .bottom-action这样写选择到的是
+        tab-a:hover内部的子级bottom-action，但这里他们是同级选择器
+        所以不生效，要改为" ~. " /" +. " */
+.header-nav .tab-a:hover~.bottom-action {
+    left: 93px;
+}
+
+.header-nav a:nth-child(3):hover~.bottom-action {
+    left: 173px;
+}
+
+/* search区域 */
+.header .search {
+    width: 360px;
+    height: 60px;
+    margin-left: 5px;
+    position: relative;
+    line-height: 60px;
+}
+
+/* 搜索框 */
+.search input {
+    width: 360px;
+    height: 40px;
+    padding: 10px 70px 10px 20px;
+    outline: 0;
+    border: 1px solid #f86442;
+    border-radius: 54px;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* 按钮 */
+.search a span {
+    display: inline-block;
+    width: 60px;
+    height: 40px;
+    background-image: linear-gradient(90deg, #ff9973 1%, #ff7251 99%);
+    position: absolute;
+    top: 11px;
+    right: 0;
+    font-size: 20px;
+    border-radius: 0 54px 54px 0;
+    text-align: center;
+    line-height: 50px;
+}
+
+.search a span i {
+    display: inline-block;
+    background-image: url(./images/search.png);
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+}
+
+
+/* icon-nav */
+/* 死几把的，要注意line-height这个几把属性的影响范围 */
+.icon-nav {
+    width: 310px;
+    height: 60px;
+    margin-left: 8px;
+}
+
+.icon-nav ul {
+    display: flex;
+}
+
+.icon-nav ul li {
+    display: flex;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+}
+
+.icon-nav ul li a {
+    display: inline-block;
+    width: 60px;
+    height: 37px;
+    position: relative;
+}
+
+.icon-nav i {
+    position: absolute;
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ccc;
+}
+
+.icon-nav p {
+    position: absolute;
+    bottom: 0;
+    width: 60px;
+    font-size: 12px;
+    text-align: center;
+}
+.icon-nav ul li a img{
+    margin-left: 20px;
+    width: 37px;
+    height: 37px;
+    border-radius: 20px;
+}
+/* 后续补充分类，上传，客户端的下拉列表框 */
+
+
+

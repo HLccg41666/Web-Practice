@@ -1,0 +1,58 @@
+{
+  "id": "4927046",
+  "name": "喜马拉雅",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "11372647",
+      "name": "创作",
+      "font_class": "chuangzuo",
+      "unicode": "e8ad",
+      "unicode_decimal": 59565
+    },
+    {
+      "icon_id": "11372667",
+      "name": "话题符号",
+      "font_class": "huatifuhao",
+      "unicode": "e8b0",
+      "unicode_decimal": 59568
+    },
+    {
+      "icon_id": "11372706",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e8b9",
+      "unicode_decimal": 59577
+    },
+    {
+      "icon_id": "11372723",
+      "name": "下载",
+      "font_class": "xiazai",
+      "unicode": "e8bc",
+      "unicode_decimal": 59580
+    },
+    {
+      "icon_id": "15838511",
+      "name": "play",
+      "font_class": "play",
+      "unicode": "e67a",
+      "unicode_decimal": 59002
+    },
+    {
+      "icon_id": "18267941",
+      "name": "全领域规模",
+      "font_class": "quanlingyuguimo",
+      "unicode": "e994",
+      "unicode_decimal": 59796
+    },
+    {
+      "icon_id": "18267956",
+      "name": "图表柱图",
+      "font_class": "tubiaozhutu",
+      "unicode": "e997",
+      "unicode_decimal": 59799
+    }
+  ]
+}

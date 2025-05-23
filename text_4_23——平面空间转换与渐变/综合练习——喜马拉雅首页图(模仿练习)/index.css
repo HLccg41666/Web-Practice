@@ -213,13 +213,181 @@ li {
     font-size: 12px;
     text-align: center;
 }
-.icon-nav ul li a img{
+
+.icon-nav ul li a img {
     margin-left: 20px;
     width: 37px;
     height: 37px;
     border-radius: 20px;
 }
+
 /* 后续补充分类，上传，客户端的下拉列表框 */
 
 
 
+/* banner区域 */
+/* 仅仅设置基本的三张图片样式，自动移动动画后续补充 */
+.banner {
+    height: 300px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.banner .wrapper {
+    width: 1080px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.banner ul {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.banner ul li {
+    display: inline-block;
+    position: absolute;
+    width: 750px;
+    height: 300px;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.banner li:nth-child(1) {
+    left: 0;
+    transform-origin: left;
+    transform: scale(0.87);
+    z-index: 1;
+}
+
+.banner li:nth-child(2) {
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.banner li:nth-child(3) {
+    transform-origin: right;
+    transform: scale(0.87);
+    right: 0;
+    z-index: 1;
+}
+
+.banner .wrapper i {
+    display: block;
+    width: 30px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    cursor: pointer;
+}
+
+.banner .left {
+    left: 0;
+    background-image: url(./images/左箭头.png);
+}
+
+.banner .right {
+    right: 0;
+    background-image: url(./images/右箭头.png);
+}
+
+.banner .wrapper:hover i {
+    background-color: #00000038;
+}
+
+
+/* category区域 */
+.category {
+    height: 120px;
+    padding: 20px 0;
+}
+
+.category .wrapper {
+    width: 1080px;
+    margin: 0 auto;
+    display: flex;
+}
+
+/* 左边 */
+.category .sub-category {
+    display: flex;
+    margin-right: 16px;
+}
+
+.category .sub-category a {
+    margin: 10px 38px 0px 38px;
+    display: inline-block;
+    text-align: center;
+}
+
+.category .sub-category span {
+    display: block;
+    font-size: 24px;
+    margin: 0 5px;
+}
+
+.category .sub-category .text {
+    font-size: 14px;
+    margin: 0;
+    color: #40404c;
+}
+
+.link {
+    display: inline-block;
+    width: 1px;
+    height: 16px;
+    background-color: #e4e4e4;
+    margin-top: 24px;
+
+}
+
+.category .sub-category a:hover span {
+    color: #ff7251;
+}
+
+/* 右边 */
+.category .recommend {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    vertical-align: top;
+}
+
+.category .main {
+    display: flex;
+    width: 206px;
+    height: 31px;
+    line-height: 31px;
+    font-size: 14px;
+    padding-left: 20px;
+}
+
+.category .main h4 {
+    color: #40404c;
+}
+
+.category .main .link {
+    display: inline-block;
+    width: 2px;
+    height: 10px;
+    background-color: #fc5832;
+    margin: 10px 8px;
+}
+
+.recommend .content span {
+    padding: 0px 10px 5px 10px;
+}
+
+.category .recommend a:hover,
+.category .recommend a:hover span {
+    color: #fc5832;
+}

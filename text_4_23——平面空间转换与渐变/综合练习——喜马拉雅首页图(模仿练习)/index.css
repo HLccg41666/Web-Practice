@@ -391,3 +391,151 @@ li {
 .category .recommend a:hover span {
     color: #fc5832;
 }
+
+
+/* home-page-content区域 */
+.home-page-content {
+    margin: 20px auto 0;
+    width: 1080px;
+    display: flex;
+}
+
+/* 作品核心区 */
+.home-page-content .layout-main {
+    width: 800px;
+}
+
+/* 猜你喜欢 */
+.home-page-content .layout-main .guess-like-wrap {
+    margin-bottom: 20px;
+}
+
+/* (公用)head标签 */
+.home-page-content .layout-main .head {
+    height: 28px;
+    margin-bottom: 20px;
+}
+
+/* 标竖线 */
+.layout-main .head .solid {
+    display: inline-block;
+    background-color: #f86442;
+    width: 5px;
+    height: 15px;
+    border-radius: 6px;
+    margin-right: 16px;
+}
+
+.layout-main .head h2 {
+    display: inline-block;
+    height: 28px;
+    font-size: 20px;
+    color: #40404c;
+    font-weight: 400;
+}
+
+/* 换一批 */
+.layout-main .head .refresh {
+    float: right;
+    font-size: 14px;
+    padding: 4px 20px 0 0;
+    cursor: pointer;
+    color: #40404c;
+}
+
+.layout-main .head .refresh i {
+    margin-right: 10px;
+    font-size: 20px;
+    vertical-align: -2px;
+}
+
+/* (公用)作品列表区 */
+.layout-main .recommend-album-list {
+    width: 800px;
+}
+
+.layout-main .recommend-album-list .content {}
+
+.layout-main .recommend-album-list .content ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.layout-main .recommend-album-list .content .card {
+    width: 140px;
+    height: 190px;
+}
+
+.layout-main .recommend-album-list .content .card .wrapper-card {
+    width: 140px;
+    height: 140px;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+}
+
+.layout-main .recommend-album-list .content .card img {
+    width: 140px;
+    height: 140px;
+    border-radius: 8px;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.layout-main .recommend-album-list .content .card .wrapper-card p {
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    font-size: 14px;
+    padding: 1px 2px;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0, #000 97%);
+}
+
+.layout-main .recommend-album-list .content .card  p span {
+    color: rgb(209, 209, 209);
+
+}
+
+.layout-main .recommend-album-list .content .card .wrapper-card p i {
+    color: rgb(209, 209, 209);
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 3px;
+    margin-right: 3px;
+    font-size: 18px;
+}
+
+.layout-main .recommend-album-list .content .card .tab {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 65px;
+    height: 20px;
+
+}
+
+.layout-main .recommend-album-list .content .card a {
+    font-size: 14px;
+    color: #a3a3a3;
+}
+
+.layout-main .recommend-album-list .content .card a span {
+    color: #40404c;
+    font-weight: 700;
+}
+
+.layout-main .recommend-album-list .content .card img:hover {
+    transform: scale(1.1);
+    background-color: #000000a9;
+}
+
+
+
+
+
+
+/* 作品旁栏区 */
+.home-page-content .layout-side {
+    width: 260px;
+    margin-left: 20px;
+}

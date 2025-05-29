@@ -722,6 +722,8 @@ li {
     display: inline-block;
 }
 
+
+/* 旁栏作品列表 */
 .home-page-content .layout-side .album-rank-list {
     padding: 20px 0 10px 0;
     margin-bottom: 20px;
@@ -729,6 +731,7 @@ li {
     background-color: #fff;
 }
 
+/* 旁栏作品区域分类标题 */
 .home-page-content .layout-side .album-rank-list h3 {
     font-size: 20px;
     color: #333;
@@ -736,12 +739,14 @@ li {
     margin-bottom: 13px;
 }
 
+
 .home-page-content .layout-side .album-rank-list .item-link {
     padding: 10px 0;
     width: 260px;
     display: block;
 }
 
+/* 旁栏作品照片盒子 */
 .home-page-content .layout-side .album-rank-list .item-link .pic-box {
     width: 80px;
     height: 80px;
@@ -751,16 +756,13 @@ li {
 
 }
 
-
-.home-page-content .layout-side .album-rank-list .item-link .pic-box .pic-wrap {}
-
-
 .home-page-content .layout-side .album-rank-list .item-link .pic-box .pic-wrap .item-img {
     width: 80px;
     height: 80px;
     position: relative;
 }
 
+/* 播放器效果图片 */
 .home-page-content .layout-side .album-rank-list .item-link .pic-box .pic-wrap .item-img .play {
     width: 5px;
     height: 5px;
@@ -772,13 +774,14 @@ li {
     transition: all 0.5s;
 }
 
+/* 播放器效果图片的hover属性 */
 .home-page-content .layout-side .album-rank-list .item-link:hover .pic-wrap .item-img .play {
     transform: translate(-50%, -50%) scale(6);
     opacity: 1;
     z-index: 3;
 }
 
-
+/* 作品图片 */
 .home-page-content .layout-side .album-rank-list .item-link .pic-box .pic-wrap .item-img .sub {
     width: 80px;
     height: 80px;
@@ -787,7 +790,7 @@ li {
     z-index: 2;
 }
 
-
+/* 唱片效果 */
 .home-page-content .layout-side .album-rank-list .item-link .pic-box .pic-wrap .item-img .cover {
     background-color: #000;
     border-radius: 60px;
@@ -800,14 +803,21 @@ li {
     right: -13px;
 }
 
-
+/* 作品内容简介 */
 .home-page-content .layout-side .album-rank-list .item-link .content {
     display: inline-block;
     max-width: 150px;
     vertical-align: middle;
 }
 
-.home-page-content .layout-side .album-rank-list .item-link .content .title {
+.home-page-content .layout-side .album-rank-list .item-link .content-3 {
+    display: inline-block;
+    max-width: 235px;
+    vertical-align: middle;
+}
+
+.home-page-content .layout-side .album-rank-list .item-link .content .title,
+.home-page-content .layout-side .album-rank-list .item-link .content-3 .title {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -818,6 +828,7 @@ li {
     font-weight: 700;
 }
 
+/* 作者 */
 .home-page-content .layout-side .album-rank-list .item-link .content .sub-title {
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -834,14 +845,15 @@ li {
 }
 
 /*  仅含标题区域 */
+/* 序号 */
 .home-page-content .layout-side .album-rank-list .item-link .index {
-    font-size: 14px;
-    color: #a3a3ac;
     float: left;
     width: 15px;
     height: 20px;
     vertical-align: middle;
     margin-right: 10px;
+    font-size: 14px;
+    color: #a3a3ac;
 }
 
 .home-page-content .layout-side .album-rank-list .item-link .content-3 {
@@ -860,7 +872,8 @@ li {
     font-weight: 700;
 }
 
+/* content区域的hover效果 */
 .home-page-content .layout-side .album-rank-list .item-link:hover .index,
-.home-page-content .layout-side .album-rank-list .item-link:hover .content-3 .title{
+.home-page-content .layout-side .album-rank-list .item-link:hover .content-3 .title {
     color: #fc5832;
 }

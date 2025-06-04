@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>计算任意区间内连续自然数的累加</title>
+    <script>
+        // 计算
+        function calculateSum() {
+            // 获取输入值
+            const startNum = parseInt(document.getElementById('startNum').value);
+            const endNum = parseInt(document.getElementById('endNum').value);
+            
+            // 验证输入
+            if (isNaN(startNum) || isNaN(endNum) || startNum <= 0 || endNum <= 0) {
+                alert("请输入数据！");
+                return;
+            }
+            
+            if (startNum >= endNum) {
+                alert("起始数必须小于终止数，请重输！");
+                document.getElementById('startNum').value = '';
+                document.getElementById('endNum').value = '';
+                return;
+            }
+            
+            // 计算累加和
+            let sum = 0;
+            for (let i = startNum; i <= endNum; i++) {
+                sum += i;
+            }
+            
+            // 显示结果
+            document.getElementById('result').value = sum;
+        }
+        // 清空
+        function clearFields() {
+            document.getElementById('startNum').value = '';
+            document.getElementById('endNum').value = '';
+            document.getElementById('result').value = '';
+        }
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: inline-block;
+            width: 80px;
+            font-weight: bold;
+        }
+        input[type="number"] {
+            padding: 5px;
+            width: 150px;
+        }
+        input[readonly] {
+            background-color: #f0f0f0;
+        }
+        .button-group {
+            margin-top: 20px;
+            text-align: center;
+        }
+        button {
+            padding: 8px 15px;
+            margin: 0 10px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>计算任意区间内连续自然数的累加</h1>
+    
+    <div class="form-group">
+        <label for="startNum">起始数:</label>
+        <input type="number" id="startNum" min="1">
+    </div>
+    
+    <div class="form-group">
+        <label for="endNum">终止数:</label>
+        <input type="number" id="endNum" min="1">
+    </div>
+    
+    <div class="form-group">
+        <label for="result">累加和:</label>
+        <input type="number" id="result" readonly>
+    </div>
+    
+    <div class="button-group">
+        <button onclick="calculateSum()">计算</button>
+        <button onclick="clearFields()">清空</button>
+    </div>
+</body>
+</html>
